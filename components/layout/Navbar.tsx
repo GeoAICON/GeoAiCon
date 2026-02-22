@@ -1,8 +1,21 @@
+'use client';
+
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="sticky top-0 z-50 bg-base-100/90 backdrop-blur-md border-b border-base-300">
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-base-100/95 backdrop-blur-md shadow-sm' : 'bg-base-100/80 backdrop-blur-sm'}`}>
       <div className="navbar container-standard h-20 items-center justify-between">
         <div className="navbar-start w-auto">
           <Link href="/" className="text-xl md:text-2xl font-bold tracking-tighter text-base-content">
@@ -57,6 +70,11 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      
+      {/* Dynamic Gradient Line */}
+      <div 
+        className={`h-[2px] w-full bg-gradient-to-r from-transparent via-primary/80 to-transparent transition-opacity duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
+      />
     </nav>
   );
 }
