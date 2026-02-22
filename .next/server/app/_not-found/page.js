@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/Desktop_piyuweb_GeoAiCon_f36fd8a0._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__6e8b85ee._.js")
+R.c("server/chunks/ssr/14306_next_dist_esm_build_templates_app-page_d5b3b3f7.js")
+R.c("server/chunks/ssr/[root-of-the-server]__c18a4aea._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__f60fbcc5._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__c9d6d100._.js")
+R.c("server/chunks/ssr/Desktop_piyuweb_GeoAiCon_0fe316d9._.js")
+R.c("server/chunks/ssr/14306_next_dist_client_components_f3dae5c5._.js")
+R.c("server/chunks/ssr/14306_next_dist_client_components_builtin_forbidden_fe7da8aa.js")
+R.c("server/chunks/ssr/3d860_piyuweb_GeoAiCon__next-internal_server_app__not-found_page_actions_4f41d3e4.js")
+R.m(76264)
+module.exports=R.m(76264).exports

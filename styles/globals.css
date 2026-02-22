@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import "./themes.css";
+
+@layer base {
+  body {
+    @apply antialiased min-h-screen font-sans bg-base-100 text-base-content;
+  }
+}
+
+/* Base structural rules */
+.section-padding {
+  @apply py-24;
+}
+
+.container-standard {
+  @apply mx-auto max-w-7xl px-6 md:px-8 lg:px-12;
+}
+
+/* 
+ * Theme constraints according to guidelines:
+ * - Professional, Institutional standard
+ * - 1px border thickness
+ * - deep tech / institutional vibes
+ * - Respect light/dark 
+ */
+
+/* Enforce 1px borders globally on buttons, cards if needed */
+.btn {
+  border-width: 1px !important;
+}
+
+/* Ensure headings have proper hierarchy */
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight;
+}
+h2 {
+  @apply text-3xl md:text-4xl font-bold tracking-tight mb-4;
+}
+h3 {
+  @apply text-xl md:text-2xl font-semibold mb-3;
+}
+p {
+  @apply text-base md:text-lg leading-relaxed text-base-content/80;
+}
+
+@theme {
+  --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+  
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-50% - 1rem));
+    }
+  }
+}

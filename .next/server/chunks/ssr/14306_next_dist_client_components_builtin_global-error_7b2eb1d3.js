@@ -1,0 +1,3 @@
+module.exports=[35171,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(32337);a.n(d("[project]/Desktop/piyuweb/GeoAiCon/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},38033,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(32337);a.n(d("[project]/Desktop/piyuweb/GeoAiCon/node_modules/next/dist/client/components/builtin/global-error.js"))},50439,a=>{"use strict";a.i(35171);var b=a.i(38033);a.n(b)}];
+
+//# sourceMappingURL=14306_next_dist_client_components_builtin_global-error_7b2eb1d3.js.map
