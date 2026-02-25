@@ -10,24 +10,24 @@ export default function IntersessionPreview() {
   // Grouped by day
   const galleryData = {
     1: [
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%201(2).jpg', title: 'Core Frameworks', desc: 'Setting the 2026 foundation' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%201(3).jpg', title: 'Main Keynote', desc: 'Opening the global portal' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%201(4).jpg', title: 'Panel Session', desc: 'Industry leaders debate' },
+      { src: '/gallery/day-1-2.jpg', title: 'Core Frameworks', desc: 'Setting the 2026 foundation' },
+      { src: '/gallery/day-1-3.jpg', title: 'Main Keynote', desc: 'Opening the global portal' },
+      { src: '/gallery/day-1-4.jpg', title: 'Panel Session', desc: 'Industry leaders debate' },
     ],
     2: [
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%202(1).JPG', title: 'Spatial Systems', desc: 'Next-gen mapping' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%202(2).jpg', title: 'Technology Demo', desc: 'Hands on application' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%202(3).jpg', title: 'Networking', desc: 'Global connections' },
+      { src: '/gallery/day-2-1.jpg', title: 'Spatial Systems', desc: 'Next-gen mapping' },
+      { src: '/gallery/day-2-2.jpg', title: 'Technology Demo', desc: 'Hands on application' },
+      { src: '/gallery/day-2-3.jpg', title: 'Networking', desc: 'Global connections' },
     ],
     3: [
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%203(1).jpg', title: 'Drone Deployments', desc: 'Multi-spectral testing' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%203(2).jpg', title: 'Flight Systems', desc: 'Field operations' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%203(3).jpg', title: 'Data Capture', desc: 'Live spatial feeds' },
+      { src: '/gallery/day-3-1.jpg', title: 'Drone Deployments', desc: 'Multi-spectral testing' },
+      { src: '/gallery/day-3-2.jpg', title: 'Flight Systems', desc: 'Field operations' },
+      { src: '/gallery/day-3-3.jpg', title: 'Data Capture', desc: 'Live spatial feeds' },
     ],
     4: [
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%204(1).jpg', title: 'Bathymetry Mapping', desc: 'Water-based intelligence' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%204(2).jpg', title: 'Hardware Config', desc: 'Marine sensors setup' },
-      { src: '/Group%20picture%20of%20GeoAI%20CON/Day%204(3).jpg', title: 'Data Processing', desc: 'Analysis and rendering' },
+      { src: '/gallery/day-4-1.jpg', title: 'Bathymetry Mapping', desc: 'Water-based intelligence' },
+      { src: '/gallery/day-4-2.jpg', title: 'Hardware Config', desc: 'Marine sensors setup' },
+      { src: '/gallery/day-4-3.jpg', title: 'Data Processing', desc: 'Analysis and rendering' },
     ]
   };
 
@@ -116,7 +116,7 @@ export default function IntersessionPreview() {
                 className="relative aspect-[4/5] overflow-hidden rounded-2xl group border border-base-300 shadow-sm cursor-pointer bg-base-200 flex items-center justify-center isolate"
               >
                 <img 
-                  src="/Group%20picture%20of%20GeoAI%20CON/Day%201(2).jpg" 
+                  src="/gallery/day-1-2.jpg" 
                   alt="Background blur" 
                   className="absolute inset-0 w-full h-full object-cover opacity-20 blur-md scale-110" 
                   aria-hidden="true"
