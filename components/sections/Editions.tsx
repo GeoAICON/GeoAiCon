@@ -36,7 +36,7 @@ export default function Editions() {
                     The next frontier in intelligent geospatial systems. Join global innovators, researchers, and government leaders as we define the 2026 standards.
                   </p>
                 </div>
-                <Link href="https://geoaicon.vercel.app/" target="_blank" className="btn btn-primary w-fit rounded-btn text-primary-content hover:-translate-y-1 transition-transform">
+                <Link href="https://2026.geoaicon.com" target="_blank" className="btn btn-primary w-fit rounded-btn text-primary-content hover:-translate-y-1 transition-transform">
                   Visit 2026 Portal &rarr;
                 </Link>
               </div>
@@ -64,7 +64,7 @@ export default function Editions() {
                     Our landmark previous edition that brought together thousands of researchers and established foundational frameworks for modern spatial AI.
                   </p>
                 </div>
-                <Link href="https://geoaicon-2025.vercel.app/" target="_blank" className="btn btn-outline border-base-300 rounded-btn text-base-content w-fit hover:bg-base-300 hover:border-base-300 transition-colors hover:-translate-y-1">
+                <Link href="https://2025.geoaicon.com" target="_blank" className="btn btn-outline border-base-300 rounded-btn text-base-content w-fit hover:bg-base-300 hover:border-base-300 transition-colors hover:-translate-y-1">
                   Explore 2025 Retrospective
                 </Link>
               </div>

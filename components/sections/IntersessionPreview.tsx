@@ -109,7 +109,7 @@ export default function IntersessionPreview() {
 
               {/* Blurred +87 More Photos Card */}
               <motion.a 
-                href="https://geoaicon.vercel.app/" 
+                href="https://2026.geoaicon.com" 
                 target="_blank"
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
@@ -135,7 +135,7 @@ export default function IntersessionPreview() {
         {/* Centered CTA */}
         <FadeIn delay={0.4} className="mt-16 flex justify-center">
           <a 
-            href="https://geoaicon.vercel.app/" 
+            href="https://2026.geoaicon.com" 
             target="_blank" 
             className="btn btn-primary rounded-full px-8 outline-none hover:shadow-lg transition-all"
           >
