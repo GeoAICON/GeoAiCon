@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { FadeIn, StaggerContainer, StaggerItem } from '../layout/Animations';
 
 export default function Editions() {
@@ -19,10 +20,12 @@ export default function Editions() {
           <StaggerItem>
             <div className="group border border-base-300 rounded-box overflow-hidden hover:border-primary transition-all duration-300 bg-base-100 shadow-sm hover:shadow-md flex flex-col h-full">
               <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-base-300/50">
-                <img 
+                <Image 
                   src="/hero/2026.png" 
                   alt="GeoAICon 2026 Preview" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="p-8 flex flex-col justify-between flex-grow">
@@ -47,10 +50,12 @@ export default function Editions() {
           <StaggerItem>
             <div className="group border border-base-300 rounded-box overflow-hidden bg-base-200/30 flex flex-col h-full">
               <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-base-300/50">
-                <img 
+                <Image 
                   src="/hero/2025.png" 
                   alt="GeoAICon 2025 Retrospective" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-all duration-700"
                 />
               </div>
               <div className="p-8 flex flex-col justify-between flex-grow">
@@ -71,6 +76,45 @@ export default function Editions() {
             </div>
           </StaggerItem>
         </StaggerContainer>
+        {/* Event Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Event',
+                'name': 'GeoAICon 2026',
+                'description': 'The next frontier in intelligent geospatial systems. Join global innovators, researchers, and government leaders.',
+                'startDate': '2026-12-01',
+                'endDate': '2026-12-03',
+                'eventStatus': 'https://schema.org/EventScheduled',
+                'eventAttendanceMode': 'https://schema.org/MixedEventAttendanceMode',
+                'location': {
+                  '@type': 'Place',
+                  'name': 'To Be Announced'
+                },
+                'organizer': {
+                  '@type': 'Organization',
+                  'name': 'GeoAICon'
+                }
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Event',
+                'name': 'GeoAICon 2025',
+                'description': 'Landmark previous edition that established foundational frameworks for modern spatial AI.',
+                'startDate': '2025-12-01',
+                'endDate': '2025-12-03',
+                'eventStatus': 'https://schema.org/EventCompleted',
+                'location': {
+                  '@type': 'Place',
+                  'name': 'Past Venue'
+                }
+              }
+            ])
+          }}
+        />
       </div>
     </section>
   );

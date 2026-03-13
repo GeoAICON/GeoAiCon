@@ -1,0 +1,16 @@
+{
+  "name": "GeoAICon Brand Portal",
+  "short_name": "GeoAICon",
+  "description": "The central brand hub for GeoAICon showcasing geospatial AI innovation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

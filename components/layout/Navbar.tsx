@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -18,8 +19,16 @@ export default function Navbar() {
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-base-100/95 backdrop-blur-md shadow-sm' : 'bg-base-100/80 backdrop-blur-sm'}`}>
       <div className="navbar container-standard h-20 items-center justify-between">
         <div className="navbar-start w-auto">
-          <Link href="/" className="text-xl md:text-2xl font-bold tracking-tighter text-base-content">
-            GeoAICon<span className="text-primary">.</span>
+          <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold tracking-tighter text-base-content">
+            <Image 
+              src="/logo.png" 
+              alt="GeoAICon Logo" 
+              width={40} 
+              height={40} 
+              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              priority
+            />
+            <span>GeoAICon<span className="text-primary">.</span></span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

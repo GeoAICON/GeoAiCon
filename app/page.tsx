@@ -5,6 +5,7 @@ import IntersessionPreview from '../components/sections/IntersessionPreview';
 import Ecosystem from '../components/sections/Ecosystem';
 import Stats from '../components/sections/Stats';
 import CTA from '../components/sections/CTA';
+import FAQ from '../components/sections/FAQ';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <IntersessionPreview />
       <Ecosystem />
       <Stats />
+      <FAQ />
       <CTA />
     </>
   );

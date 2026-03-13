@@ -9,7 +9,7 @@ export default function Hero() {
         <StaggerContainer className="max-w-4xl space-y-10">
           <StaggerItem className="space-y-4">
             <span className="inline-block py-1 px-3 border border-base-300 rounded-badge text-xs font-semibold tracking-widest text-primary uppercase bg-base-200/50 backdrop-blur-sm shadow-sm">
-              The Confrence  Hub
+              The Global GeoAI Conference Hub
             </span>
             <h1 className="leading-tight">
               Advancing Geospatial AI <br />
@@ -32,22 +32,25 @@ export default function Hero() {
             </a>
           </StaggerItem>
           
-          <StaggerItem className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 mt-8 border-t border-base-300/50">
-             <div>
-               <div className="text-3xl font-bold tracking-tight">5.2K+</div>
-               <div className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Attendees</div>
+          <StaggerItem 
+            className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 mt-8 border-t border-base-300/50"
+            aria-label="Conference Statistics"
+          >
+             <div className="flex flex-col">
+               <span className="text-3xl font-bold tracking-tight">5.2K+</span>
+               <span className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Attendees</span>
              </div>
-             <div>
-               <div className="text-3xl font-bold tracking-tight">120+</div>
-               <div className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Publications</div>
+             <div className="flex flex-col">
+               <span className="text-3xl font-bold tracking-tight">120+</span>
+               <span className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Publications</span>
              </div>
-             <div>
-               <div className="text-3xl font-bold tracking-tight">45</div>
-               <div className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Nations</div>
+             <div className="flex flex-col">
+               <span className="text-3xl font-bold tracking-tight">45</span>
+               <span className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Nations</span>
              </div>
-             <div>
-               <div className="text-3xl font-bold tracking-tight">80+</div>
-               <div className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Keynotes</div>
+             <div className="flex flex-col">
+               <span className="text-3xl font-bold tracking-tight">80+</span>
+               <span className="text-xs uppercase tracking-widest text-base-content/60 mt-2 font-semibold">Keynotes</span>
              </div>
           </StaggerItem>
         </StaggerContainer>

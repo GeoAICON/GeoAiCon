@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -6,8 +7,15 @@ export default function Footer() {
       <div className="container-standard flex flex-col gap-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8">
           <div className="lg:col-span-1 space-y-6">
-            <Link href="/" className="text-2xl font-bold tracking-tighter text-base-content">
-              GeoAICon<span className="text-primary">.</span>
+            <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-base-content">
+              <Image 
+                src="/logo.png" 
+                alt="GeoAICon Logo" 
+                width={40} 
+                height={40} 
+                className="w-8 h-8 md:w-10 md:h-10 object-contain" 
+              />
+              <span>GeoAICon<span className="text-primary">.</span></span>
             </Link>
             <p className="text-sm text-base-content/80 leading-relaxed">
               The premier international hub for Artificial Intelligence in Geospatial Technology. Bridging the gap between academic research and industry execution.

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FadeIn, StaggerContainer, StaggerItem } from '../layout/Animations';
 
@@ -93,11 +94,12 @@ export default function IntersessionPreview() {
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   className="relative aspect-[4/5] overflow-hidden rounded-2xl group border border-base-300 shadow-sm cursor-pointer"
                 >
-                  <img 
+                  <Image 
                     src={img.src} 
                     alt={img.title} 
-                    className="w-full h-full object-cover" 
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <span className="text-primary font-semibold text-xs tracking-widest uppercase mb-1">Day 0{activeDay}</span>
@@ -115,10 +117,12 @@ export default function IntersessionPreview() {
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className="relative aspect-[4/5] overflow-hidden rounded-2xl group border border-base-300 shadow-sm cursor-pointer bg-base-200 flex items-center justify-center isolate"
               >
-                <img 
+                <Image 
                   src="/gallery/day-1-2.jpg" 
                   alt="Background blur" 
-                  className="absolute inset-0 w-full h-full object-cover opacity-20 blur-md scale-110" 
+                  fill
+                  sizes="25vw"
+                  className="object-cover opacity-20 blur-md scale-110" 
                   aria-hidden="true"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-base-100/40 to-base-200/90 z-10" />
