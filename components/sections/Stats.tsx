@@ -1,7 +1,7 @@
 export default function Stats() {
   return (
-    <section id="impact" className="section-padding bg-neutral text-neutral-content border-y border-base-300/50">
-      <div className="container-standard">
+    <section id="impact" className="section-padding bg-transparent border-y border-base-300/50">
+      <div className="container-standard bg-neutral/80 backdrop-blur-md rounded-3xl p-8 lg:p-12 shadow-2xl text-neutral-content">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="max-w-xl space-y-6">
             <h2 className="text-primary uppercase text-sm font-semibold tracking-widest">Track Record</h2>
@@ -9,7 +9,7 @@ export default function Stats() {
               Quantifiable Global Impact
             </h3>
             <p className="text-neutral-content/80 text-lg md:text-xl leading-relaxed font-light">
-              For over half a decade, GeoAICon has accelerated the timeline of adoption for spatial intelligence systems across major civil infrastructure projects worldwide.
+              For over half a decade, GeoAI CON has accelerated the timeline of adoption for spatial intelligence systems across major civil infrastructure projects worldwide.
             </p>
           </div>
           

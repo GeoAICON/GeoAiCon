@@ -35,8 +35,8 @@ export default function IntersessionPreview() {
   const currentImages = galleryData[activeDay as keyof typeof galleryData];
 
   return (
-    <section id="intersession" className="section-padding bg-base-100/50">
-      <div className="container-standard">
+    <section id="intersession" className="section-padding bg-transparent">
+      <div className="container-standard bg-base-100/60 backdrop-blur-md rounded-3xl p-8 lg:p-12 shadow-xl border border-base-200/50">
         {/* Header Section */}
         <FadeIn className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
           <div className="max-w-2xl space-y-4">

@@ -9,14 +9,14 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://geoaicon.com';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'GeoAICon Brand Portal | Advancing Geospatial AI',
-    template: '%s | GeoAICon'
+    default: 'GeoAI CON Brand Portal | Advancing Geospatial AI',
+    template: '%s | GeoAI CON'
   },
-  description: 'The central brand hub for GeoAICon. Uniting academic minds, government leaders, and industry pioneers to build scalable geospatial AI solutions for global impact.',
+  description: 'The central brand hub for GeoAI CON. Uniting academic minds, government leaders, and industry pioneers to build scalable geospatial AI solutions for global impact.',
   keywords: ['GeoAI', 'Geospatial AI', 'Conference', 'GIS', 'Artificial Intelligence', 'Machine Learning', 'Spatial Data Science', 'Earth Observation'],
-  authors: [{ name: 'GeoAICon Team' }],
-  creator: 'GeoAICon',
-  publisher: 'GeoAICon',
+  authors: [{ name: 'GeoAI CON Team' }],
+  creator: 'GeoAI CON',
+  publisher: 'GeoAI CON',
   formatDetection: {
     email: false,
     address: false,
@@ -26,22 +26,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: baseUrl,
-    siteName: 'GeoAICon Brand Portal',
-    title: 'GeoAICon | Advancing Geospatial AI for Global Impact',
-    description: 'The central hub for the GeoAICon conference series, connecting the global geospatial AI community.',
+    siteName: 'GeoAI CON Brand Portal',
+    title: 'GeoAI CON | Advancing Geospatial AI for Global Impact',
+    description: 'The central hub for the GeoAI CON conference series, connecting the global geospatial AI community.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'GeoAICon Brand Portal',
+        alt: 'GeoAI CON Brand Portal',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GeoAICon | Advancing Geospatial AI',
-    description: 'The central brand hub for GeoAICon conference series and geospatial AI ecosystem.',
+    title: 'GeoAI CON | Advancing Geospatial AI',
+    description: 'The central brand hub for GeoAI CON conference series and geospatial AI ecosystem.',
     images: ['/og-image.png'],
     creator: '@GeoAICon',
   },

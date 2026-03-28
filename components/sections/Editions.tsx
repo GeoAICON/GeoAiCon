@@ -6,8 +6,8 @@ import { FadeIn, StaggerContainer, StaggerItem } from '../layout/Animations';
 
 export default function Editions() {
   return (
-    <section id="editions" className="section-padding bg-base-100">
-      <div className="container-standard">
+    <section id="editions" className="section-padding bg-transparent">
+      <div className="container-standard bg-base-100/60 backdrop-blur-md rounded-3xl p-8 lg:p-12 shadow-xl border border-base-200/50">
         <FadeIn className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl space-y-4">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-widest">The Conferences</h2>
@@ -22,7 +22,7 @@ export default function Editions() {
               <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-base-300/50">
                 <Image 
                   src="/hero/2026.png" 
-                  alt="GeoAICon 2026 Preview" 
+                  alt="GeoAI CON 2026 Preview" 
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -34,7 +34,7 @@ export default function Editions() {
                     <div className="badge badge-primary badge-outline font-semibold uppercase tracking-wider text-xs px-3 py-3 rounded-badge">Upcoming Edition</div>
                     <div className="text-base-content/60 font-medium text-sm">Dec 2026</div>
                   </div>
-                  <h4 className="text-3xl font-bold mb-4">GeoAICon 2026</h4>
+                  <h4 className="text-3xl font-bold mb-4">GeoAI CON 2026</h4>
                   <p className="text-base-content/70 mb-8 leading-relaxed">
                     The next frontier in intelligent geospatial systems. Join global innovators, researchers, and government leaders as we define the 2026 standards.
                   </p>
@@ -52,7 +52,7 @@ export default function Editions() {
               <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-base-300/50">
                 <Image 
                   src="/hero/2025.png" 
-                  alt="GeoAICon 2025 Retrospective" 
+                  alt="GeoAI CON 2025 Retrospective" 
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-all duration-700"
@@ -64,7 +64,7 @@ export default function Editions() {
                     <div className="badge font-semibold uppercase tracking-wider text-xs px-3 py-3 rounded-badge bg-base-300 border-none text-base-content/80">Completed</div>
                     <div className="text-base-content/60 font-medium text-sm">Dec 2025</div>
                   </div>
-                  <h4 className="text-3xl font-bold mb-4">GeoAICon 2025</h4>
+                  <h4 className="text-3xl font-bold mb-4">GeoAI CON 2025</h4>
                   <p className="text-base-content/70 mb-8 leading-relaxed">
                     Our landmark previous edition that brought together thousands of researchers and established foundational frameworks for modern spatial AI.
                   </p>
@@ -84,7 +84,7 @@ export default function Editions() {
               {
                 '@context': 'https://schema.org',
                 '@type': 'Event',
-                'name': 'GeoAICon 2026',
+                'name': 'GeoAI CON 2026',
                 'description': 'The next frontier in intelligent geospatial systems. Join global innovators, researchers, and government leaders.',
                 'startDate': '2026-12-01',
                 'endDate': '2026-12-03',
@@ -96,13 +96,13 @@ export default function Editions() {
                 },
                 'organizer': {
                   '@type': 'Organization',
-                  'name': 'GeoAICon'
+                  'name': 'GeoAI CON'
                 }
               },
               {
                 '@context': 'https://schema.org',
                 '@type': 'Event',
-                'name': 'GeoAICon 2025',
+                'name': 'GeoAI CON 2025',
                 'description': 'Landmark previous edition that established foundational frameworks for modern spatial AI.',
                 'startDate': '2025-12-01',
                 'endDate': '2025-12-03',
