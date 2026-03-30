@@ -4,11 +4,11 @@ import { FadeIn, StaggerContainer, StaggerItem } from '../layout/Animations';
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-base-100 border-t border-b border-base-300/50 relative overflow-hidden">
+    <section id="about" className="section-padding bg-transparent relative overflow-hidden">
       {/* Decorative gradient orb */}
       <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       
-      <div className="container-standard relative z-10">
+      <div className="container-standard relative z-10 bg-base-100/60 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-base-200/50">
         <StaggerContainer className="grid lg:grid-cols-12 gap-12 lg:gap-24 items-center">
           
           <div className="lg:col-span-5 space-y-8">
@@ -24,7 +24,7 @@ export default function About() {
             
             <StaggerItem>
               <p className="text-lg text-base-content/70 leading-relaxed font-light">
-                GeoAICon is the leading international platform dedicated to the convergence of Geographic Information Systems (GIS) and Artificial Intelligence.
+                GeoAI CON is the leading international platform dedicated to the convergence of Geographic Information Systems (GIS) and Artificial Intelligence.
               </p>
             </StaggerItem>
           </div>

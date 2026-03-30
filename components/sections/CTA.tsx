@@ -1,8 +1,8 @@
 export default function CTA() {
   return (
-    <section id="partnership" className="section-padding bg-base-100">
+    <section id="partnership" className="section-padding bg-transparent">
       <div className="container-standard">
-        <div className="bg-base-200/30 border border-base-300 rounded-box p-12 md:p-20 text-center max-w-5xl mx-auto space-y-8 shadow-sm relative overflow-hidden">
+        <div className="bg-base-100/60 backdrop-blur-md border border-base-300 rounded-3xl p-12 md:p-20 text-center max-w-5xl mx-auto space-y-8 shadow-xl relative overflow-hidden">
           {/* Subtle background decoration */}
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
           <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>

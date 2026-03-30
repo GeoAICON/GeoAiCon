@@ -7,9 +7,9 @@ export default function JsonLd() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${baseUrl}/#organization`,
-    'name': 'GeoAICon',
+    'name': 'GeoAI CON',
     'url': baseUrl,
-    'logo': `${baseUrl}/logo.png`,
+    'logo': `${baseUrl}/Logo1.png`,
     'sameAs': [
       'https://twitter.com/GeoAICon',
       'https://linkedin.com/company/geoaicon',
@@ -23,7 +23,7 @@ export default function JsonLd() {
     '@type': 'WebSite',
     '@id': `${baseUrl}/#website`,
     'url': baseUrl,
-    'name': 'GeoAICon Brand Portal',
+    'name': 'GeoAI CON Brand Portal',
     'publisher': { '@id': `${baseUrl}/#organization` },
     'potentialAction': {
       '@type': 'SearchAction',
