@@ -5,73 +5,32 @@
   prefersdark: false;
   color-scheme: "light";
 
-  --color-base-100: oklch(99% 0.003 260);
-  --color-base-200: oklch(96% 0.003 260);
-  --color-base-300: oklch(92% 0.003 260);
+  --color-base-100: #F8FAFC; /* Background */
+  --color-base-200: #F1F5F9;
+  --color-base-300: #E2E8F0; /* Border */
 
-  --color-base-content: oklch(25% 0.01 260);
+  --color-base-content: #0F172A; /* Text / Headings */
 
-  --color-primary: oklch(55% 0.15 230);
-  --color-primary-content: oklch(98% 0.002 260);
+  --color-primary: #2563EB; /* Blue */
+  --color-primary-content: #FFFFFF;
 
-  --color-secondary: oklch(60% 0.12 200);
-  --color-secondary-content: oklch(98% 0.002 260);
+  --color-secondary: #64748B; /* Slate Gray */
+  --color-secondary-content: #FFFFFF;
 
-  --color-accent: oklch(65% 0.10 180);
-  --color-accent-content: oklch(98% 0.002 260);
+  --color-accent: #06B6D4; /* Cyan */
+  --color-accent-content: #FFFFFF;
 
-  --color-neutral: oklch(85% 0.01 260);
-  --color-neutral-content: oklch(30% 0.01 260);
+  --color-neutral: #E2E8F0;
+  --color-neutral-content: #0F172A;
 
-  --color-info: oklch(65% 0.12 220);
-  --color-success: oklch(65% 0.12 160);
-  --color-warning: oklch(75% 0.12 90);
-  --color-error: oklch(60% 0.15 25);
-
-  --radius-selector: 0.75rem;
-  --radius-field: 0.75rem;
-  --radius-box: 0.75rem;
-
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
-}
-
-@plugin "daisyui/theme" {
-  name: "geoaicon-dark";
-  default: false;
-  prefersdark: false;
-  color-scheme: "dark";
-
-  --color-base-100: oklch(14% 0.02 260);
-  --color-base-200: oklch(18% 0.02 260);
-  --color-base-300: oklch(22% 0.02 260);
-
-  --color-base-content: oklch(92% 0.01 260);
-
-  --color-primary: oklch(65% 0.12 230);
-  --color-primary-content: oklch(15% 0.02 260);
-
-  --color-secondary: oklch(70% 0.10 200);
-  --color-secondary-content: oklch(15% 0.02 260);
-
-  --color-accent: oklch(72% 0.12 180);
-  --color-accent-content: oklch(15% 0.02 260);
-
-  --color-neutral: oklch(30% 0.02 260);
-  --color-neutral-content: oklch(90% 0.01 260);
-
-  --color-info: oklch(70% 0.08 220);
-  --color-success: oklch(72% 0.10 160);
-  --color-warning: oklch(85% 0.10 95);
-  --color-error: oklch(65% 0.12 25);
+  --color-info: #3ABFF8;
+  --color-success: #36D399;
+  --color-warning: #FBBD23;
+  --color-error: #F87272;
 
   --radius-selector: 0.75rem;
   --radius-field: 0.75rem;
-  --radius-box: 0.75rem;
+  --radius-box: 1rem;
 
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
