@@ -99,12 +99,12 @@ export default function Hero() {
         <div className="hidden lg:flex justify-end pointer-events-auto">
           <StaggerContainer>
             <StaggerItem>
-              <div className="bg-white/85 backdrop-blur-xl border border-slate-200/60 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] rounded-3xl p-6 max-w-xs ml-auto hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.15)] transition-all duration-500">
+              <div className="bg-white/20 backdrop-blur-2xl border border-white/30 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.15)] rounded-3xl p-6 max-w-xs ml-auto hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.25)] transition-all duration-500 hover:bg-white/25">
                 <div className="flex flex-col items-center mb-5 border-b border-slate-200 pb-5">
                   <div className="relative w-24 h-24 mb-3 drop-shadow-sm">
                     <Image src="/Logo1.png" alt="GeoAI CON Logo" fill className="object-contain" priority />
                   </div>
-                  <h2 className="text-xl font-black text-slate-900 tracking-wide uppercase text-center">
+                  <h2 className="text-xl font-black text-slate-900 tracking-wide text-center">
                     GeoAI CON
                   </h2>
                   <p className="text-blue-600 font-bold tracking-[0.1em] text-xs mt-1 uppercase text-center">

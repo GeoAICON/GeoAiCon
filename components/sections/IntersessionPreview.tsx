@@ -67,12 +67,12 @@ export default function IntersessionPreview() {
                   {activeDay === day && (
                     <motion.div
                       layoutId="activeTabPill"
-                      className="absolute inset-0 bg-blue-600 rounded-xl -z-10"
+                      className="absolute inset-0 bg-blue-600 rounded-xl z-0"
                       initial={false}
                       transition={{ type: "spring", stiffness: 400, damping: 30 }}
                     />
                   )}
-                  DAY 0{day}
+                  <span className="relative z-10">DAY 0{day}</span>
                 </button>
               ))}
             </div>
@@ -121,7 +121,7 @@ export default function IntersessionPreview() {
 
             {/* Blurred +87 More Photos Card */}
             <motion.a 
-              href="https://2026.geoaicon.com" 
+              href="https://2026.geoaicon.com/intersession" 
               target="_blank"
               whileHover={{ y: -5 }}
               className="relative shrink-0 w-[280px] md:w-[320px] lg:w-[360px] aspect-[4/5] overflow-hidden rounded-3xl group border border-slate-200 shadow-md snap-center md:snap-start cursor-pointer bg-white flex items-center justify-center isolate hover:border-blue-300 transition-all duration-300 hover:shadow-xl"
@@ -151,11 +151,11 @@ export default function IntersessionPreview() {
         {/* Centered CTA */}
         <FadeIn delay={0.2} className="mt-8 flex justify-center pt-8">
           <a 
-            href="https://2026.geoaicon.com" 
+            href="https://2026.geoaicon.com/intersession" 
             target="_blank" 
             className="btn bg-white border-slate-200 text-slate-700 rounded-xl px-10 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-300 shadow-sm transition-all duration-300 tracking-wide font-semibold Group"
           >
-            View Complete Archive 
+            View Complete Gallery 
             <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
           </a>
         </FadeIn>
