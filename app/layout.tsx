@@ -43,7 +43,6 @@ export const metadata: Metadata = {
     title: 'GeoAI CON | Advancing Geospatial AI',
     description: 'The central brand hub for GeoAI CON conference series and geospatial AI ecosystem.',
     images: ['/og-image.png'],
-    creator: '@GeoAICon',
   },
   robots: {
     index: true,

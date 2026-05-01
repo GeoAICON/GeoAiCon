@@ -43,8 +43,9 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="font-semibold text-slate-900 tracking-wide text-sm uppercase">Connect</h4>
               <ul className="space-y-3 text-sm flex flex-col text-slate-600 font-medium">
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">LinkedIn</Link></li>
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Twitter (X)</Link></li>
+                <li><Link href="https://www.facebook.com/people/Geoaicon/61582803331985/" target="_blank" className="hover:text-blue-600 transition-colors">Facebook</Link></li>
+                <li><Link href="https://www.instagram.com/geoaicon/" target="_blank" className="hover:text-blue-600 transition-colors">Instagram</Link></li>
+                <li><Link href="https://www.linkedin.com/groups/15392053/" target="_blank" className="hover:text-blue-600 transition-colors">LinkedIn</Link></li>
                 <li><Link href="#" className="hover:text-blue-600 transition-colors">Contact Support</Link></li>
                 <li><Link href="#" className="hover:text-blue-600 transition-colors">Sponsorship</Link></li>
               </ul>

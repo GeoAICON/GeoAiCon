@@ -11,8 +11,9 @@ export default function JsonLd() {
     'url': baseUrl,
     'logo': `${baseUrl}/Logo1.png`,
     'sameAs': [
-      'https://twitter.com/GeoAICon',
-      'https://linkedin.com/company/geoaicon',
+      'https://www.facebook.com/people/Geoaicon/61582803331985/',
+      'https://www.instagram.com/geoaicon/',
+      'https://www.linkedin.com/groups/15392053/',
       'https://github.com/GeoAICON'
     ],
     'description': 'The premier global conference series at the intersection of Geospatial AI and Intelligent Systems.'
