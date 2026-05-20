@@ -37,14 +37,14 @@ export default function FAQ() {
                 <span className="text-blue-600 text-[10px] uppercase font-bold tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block shadow-sm">
                   Support Hub
                 </span>
-                <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight text-slate-900 drop-shadow-sm">
+                <h2 className="text-xl md:text-2xl font-bold tracking-tight leading-tight text-slate-900">
                   Frequently <br />
                   <span className="text-slate-400 italic font-medium">Asked Questions</span>
                 </h2>
               </StaggerItem>
               
               <StaggerItem>
-                <p className="text-slate-600 text-lg leading-relaxed font-normal">
+                <p className="text-slate-600 text-sm leading-relaxed font-normal">
                   Everything you need to know about the upcoming conference and the GeoAI ecosystem.
                 </p>
               </StaggerItem>
@@ -56,11 +56,11 @@ export default function FAQ() {
                   <StaggerItem key={index}>
                     <div className="collapse collapse-plus bg-white border border-slate-200 rounded-2xl group/faq hover:bg-slate-50 hover:border-blue-300 transition-all duration-300 shadow-sm">
                       <input type="radio" name="faq-accordion" /> 
-                      <div className="collapse-title text-xl font-bold tracking-tight text-slate-800 group-hover/faq:text-blue-600 group-hover/faq:pl-6 transition-all duration-300 px-6">
+                      <div className="collapse-title text-base font-semibold tracking-tight text-slate-800 group-hover/faq:text-blue-600 transition-all duration-300 px-6">
                         {faq.question}
                       </div>
                       <div className="collapse-content px-6"> 
-                        <p className="text-slate-600 leading-relaxed max-w-2xl pt-2 pb-4 font-normal">
+                        <p className="text-slate-600 leading-relaxed max-w-2xl pt-2 pb-4 font-normal text-sm">
                           {faq.answer}
                         </p>
                       </div>

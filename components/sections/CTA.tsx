@@ -21,14 +21,14 @@ export default function CTA() {
               <span className="text-blue-600 text-[10px] uppercase font-bold tracking-[0.2em] px-4 py-1.5 border border-blue-200/50 rounded-full bg-white/80 inline-block shadow-sm">
                 Open Solicitation
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight max-w-4xl mx-auto leading-[0.95] text-balance text-slate-900 drop-shadow-sm">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight max-w-4xl mx-auto leading-[1.1] text-balance text-slate-900">
                 Shape the future of <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 italic font-medium">Spatial Intelligence</span>
               </h2>
             </StaggerItem>
 
             <StaggerItem>
-              <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
+              <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
                 Sponsorships and institutional partnerships for the 2026 edition are now open. 
                 Collaborate directly with the foremost authorities in Geospatial AI.
               </p>

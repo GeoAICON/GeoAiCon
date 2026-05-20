@@ -1,8 +1,16 @@
 import type { Metadata } from 'next';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import '../styles/globals.css';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import JsonLd from '../components/layout/JsonLd';
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-plus-jakarta',
+  display: 'swap',
+});
+
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://geoaicon.com';
 
@@ -73,8 +81,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="geoaicon-light">
-      <body className="flex flex-col min-h-screen bg-base-100 text-base-content antialiased">
+    <html lang="en" data-theme="geoaicon-light" className={`${plusJakartaSans.variable}`}>
+      <body className="flex flex-col min-h-screen bg-base-100 text-base-content antialiased font-sans">
         <JsonLd />
         <Navbar />
         <main className="flex-grow flex flex-col">{children}</main>

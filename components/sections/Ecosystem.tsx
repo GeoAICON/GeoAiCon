@@ -20,13 +20,13 @@ export default function Ecosystem() {
           </StaggerItem>
           
           <StaggerItem>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-900 drop-shadow-sm">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight leading-tight text-slate-900">
               The GeoAI <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Ecosystem</span>
             </h2>
           </StaggerItem>
           
           <StaggerItem>
-            <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
               A consortium of the world's leading academic institutions, spatial tech enterprises, 
               and government spatial data infrastructures.
             </p>

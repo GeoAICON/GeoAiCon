@@ -42,10 +42,10 @@ export default function IntersessionPreview() {
         <FadeIn className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
           <div className="max-w-2xl space-y-4">
             <h2 className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block shadow-sm">Ongoing Work</h2>
-            <h3 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 drop-shadow-sm">
+            <h3 className="text-xl md:text-2xl font-bold tracking-tight text-slate-900">
               Intersession <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Glimpses</span>
             </h3>
-            <p className="text-slate-600 mt-4 max-w-lg leading-relaxed text-lg font-normal">
+            <p className="text-slate-600 mt-3 max-w-lg leading-relaxed text-sm font-normal">
               Behind the scenes of our continual global research deployment and field operations between main events.
             </p>
           </div>
@@ -113,8 +113,8 @@ export default function IntersessionPreview() {
                 
                 <div className="absolute inset-0 flex flex-col justify-end p-8 z-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   <span className="text-cyan-400 font-bold text-[10px] tracking-widest uppercase mb-2 border border-cyan-400/30 bg-slate-900/50 px-2 py-1 rounded w-fit backdrop-blur-md">Day 0{activeDay}</span>
-                  <span className="text-white font-black text-2xl leading-tight mb-2 drop-shadow-lg">{img.title}</span>
-                  <span className="text-slate-200 text-sm font-medium drop-shadow-md">{img.desc}</span>
+                  <span className="text-white font-bold text-base leading-tight mb-1 drop-shadow-lg">{img.title}</span>
+                  <span className="text-slate-200 text-xs font-medium drop-shadow-md">{img.desc}</span>
                 </div>
               </motion.div>
             ))}
@@ -137,7 +137,7 @@ export default function IntersessionPreview() {
               <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-blue-50/80 z-10" />
               <div className="relative z-20 flex flex-col items-center justify-center p-8 text-center space-y-4 group-hover:scale-105 transition-transform duration-500">
                 <div className="w-20 h-20 rounded-full bg-white border border-slate-200 flex items-center justify-center shadow-lg group-hover:border-blue-300 transition-colors">
-                  <span className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">+87</span>
+                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">+87</span>
                 </div>
                 <span className="text-slate-900 font-bold uppercase tracking-widest text-sm">More Photos</span>
                 <span className="text-slate-500 text-xs font-medium leading-relaxed max-w-[180px]">Swipe to explore the complete event gallery archive</span>

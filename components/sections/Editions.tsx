@@ -14,7 +14,7 @@ export default function Editions() {
         <FadeIn className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 relative z-10">
           <div className="max-w-2xl space-y-4">
             <h2 className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block">The Conferences</h2>
-            <h3 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 drop-shadow-sm">
+            <h3 className="text-xl md:text-2xl font-bold tracking-tight text-slate-900">
               Official <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Editions</span>
             </h3>
           </div>
@@ -40,8 +40,8 @@ export default function Editions() {
                     <div className="border border-blue-200 text-blue-700 font-bold uppercase tracking-widest text-[10px] px-3 py-1.5 rounded-full bg-blue-50 shadow-sm">Upcoming Edition</div>
                     <div className="text-slate-500 font-semibold tracking-wider text-xs uppercase">Dec 2026</div>
                   </div>
-                  <h4 className="text-3xl font-black mb-4 text-slate-900 group-hover:text-blue-700 transition-colors">GeoAI CON 2026</h4>
-                  <p className="text-slate-600 mb-8 leading-relaxed font-normal">
+                  <h4 className="text-lg font-bold mb-3 text-slate-900 group-hover:text-blue-700 transition-colors">GeoAI CON 2026</h4>
+                  <p className="text-slate-600 mb-6 leading-relaxed font-normal text-sm">
                     The next frontier in intelligent geospatial systems. Join global innovators, researchers, and government leaders as we define the 2026 standards.
                   </p>
                 </div>
@@ -70,8 +70,8 @@ export default function Editions() {
                     <div className="font-bold uppercase tracking-widest text-[10px] px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600">Completed</div>
                     <div className="text-slate-400 font-semibold tracking-wider text-xs uppercase">Dec 2025</div>
                   </div>
-                  <h4 className="text-3xl font-black mb-4 text-slate-800 group-hover:text-slate-900 transition-colors">GeoAI CON 2025</h4>
-                  <p className="text-slate-500 mb-8 leading-relaxed font-normal">
+                  <h4 className="text-lg font-bold mb-3 text-slate-800 group-hover:text-slate-900 transition-colors">GeoAI CON 2025</h4>
+                  <p className="text-slate-500 mb-6 leading-relaxed font-normal text-sm">
                     Our landmark previous edition that brought together thousands of researchers and established foundational frameworks for modern spatial AI.
                   </p>
                 </div>

@@ -5,12 +5,14 @@
 @layer base {
   body {
     @apply antialiased min-h-screen font-sans bg-base-100 text-base-content;
+    font-size: 15px;
+    line-height: 1.6;
   }
 }
 
 /* Base structural rules */
 .section-padding {
-  @apply py-24;
+  @apply py-16 md:py-20;
 }
 
 .container-standard {
@@ -18,11 +20,8 @@
 }
 
 /* 
- * Theme constraints according to guidelines:
- * - Professional, Institutional standard
- * - 1px border thickness
- * - deep tech / institutional vibes
- * - Respect light/dark 
+ * Professional Typography Scale (Academic / Conference Standard)
+ * Consistent across the whole site — no section should override these wildly.
  */
 
 /* Enforce 1px borders globally on buttons, cards if needed */
@@ -30,21 +29,25 @@
   border-width: 1px !important;
 }
 
-/* Ensure headings have proper hierarchy */
+/* Professional heading hierarchy — sensible sizes */
 h1 {
-  @apply text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight;
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight;
 }
 h2 {
-  @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4;
+  @apply text-xl md:text-2xl lg:text-3xl font-bold tracking-tight mb-3;
 }
 h3 {
-  @apply text-xl md:text-2xl font-semibold mb-3;
+  @apply text-lg md:text-xl font-semibold mb-2;
+}
+h4 {
+  @apply text-base md:text-lg font-semibold mb-1;
 }
 p {
-  @apply text-base md:text-lg leading-relaxed text-base-content/70;
+  @apply text-sm md:text-base leading-relaxed text-base-content/70;
 }
 
 @theme {
+  --font-sans: var(--font-plus-jakarta), sans-serif;
   --animate-infinite-scroll: infinite-scroll 40s linear infinite;
   --animate-infinite-scroll-reverse: infinite-scroll-reverse 40s linear infinite;
   @keyframes infinite-scroll {
