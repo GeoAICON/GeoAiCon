@@ -19,15 +19,16 @@ export default function Navbar() {
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200' : 'bg-slate-50/80 backdrop-blur-sm'}`}>
       <div className="navbar container-standard h-20 items-center justify-between">
         <div className="navbar-start w-auto">
-          <Link href="/" className="flex items-center gap-2 focus:outline-none focus-visible:outline-none">
+          <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold tracking-tighter text-slate-900 focus:outline-none focus-visible:outline-none">
             <Image 
               src="/Logo1.png" 
               alt="GeoAI CON Logo" 
-              width={140} 
+              width={40} 
               height={40} 
-              className="h-10 md:h-12 w-auto object-contain"
+              className="w-8 h-8 md:w-10 md:h-10 object-contain"
               priority
             />
+            <span>GeoAI CON</span>
           </Link>
         </div>
         <div className="navbar-center hidden xl:flex">

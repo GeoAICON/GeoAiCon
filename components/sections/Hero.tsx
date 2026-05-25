@@ -77,7 +77,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-4 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
         >
-          GEOAI CON <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">2026</span>
+          GeoAI CON <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">2026</span>
         </motion.h1>
 
         {/* Core Theme Subtitle with Premium Brand Gradient */}
