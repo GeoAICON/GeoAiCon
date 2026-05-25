@@ -7,15 +7,14 @@ export default function Footer() {
       <div className="container-standard flex flex-col gap-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8">
           <div className="lg:col-span-1 space-y-6">
-            <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-slate-900">
+            <Link href="/" className="flex items-center gap-2 focus:outline-none focus-visible:outline-none">
               <Image 
                 src="/Logo1.png" 
                 alt="GeoAI CON Logo" 
-                width={40} 
+                width={140} 
                 height={40} 
-                className="w-8 h-8 md:w-10 md:h-10 object-contain" 
+                className="h-10 md:h-12 w-auto object-contain" 
               />
-              <span>GeoAI CON</span>
             </Link>
             <p className="text-sm text-slate-600 leading-relaxed font-normal">
               The premier international hub for Artificial Intelligence in Geospatial Technology. Bridging the gap between academic research and industry execution.

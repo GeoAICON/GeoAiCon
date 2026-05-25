@@ -19,16 +19,15 @@ export default function Navbar() {
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200' : 'bg-slate-50/80 backdrop-blur-sm'}`}>
       <div className="navbar container-standard h-20 items-center justify-between">
         <div className="navbar-start w-auto">
-          <Link href="/" className="flex items-center gap-2 text-xl md:text-2xl font-bold tracking-tighter text-slate-900">
+          <Link href="/" className="flex items-center gap-2 focus:outline-none focus-visible:outline-none">
             <Image 
               src="/Logo1.png" 
               alt="GeoAI CON Logo" 
-              width={40} 
+              width={140} 
               height={40} 
-              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              className="h-10 md:h-12 w-auto object-contain"
               priority
             />
-            <span>GeoAI CON</span>
           </Link>
         </div>
         <div className="navbar-center hidden xl:flex">
@@ -53,7 +52,7 @@ export default function Navbar() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 opacity-70" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
               </div>
               <ul tabIndex={0} className="dropdown-content menu p-2 shadow-xl bg-white rounded-xl w-60 border border-slate-100 z-[60] mt-0">
-                <li><Link href="https://2026.geoaicon.com/intersession" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Geo Intersession – 2026</Link></li>
+                <li><Link href="https://sensrs.com/gallery/geoinnovate-thon-26/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">GeoInnovate Thon 2026</Link></li>
               </ul>
             </li>
 
@@ -109,7 +108,7 @@ export default function Navbar() {
                 <details>
                   <summary className="hover:text-blue-600">Workshop</summary>
                   <ul className="p-2 border-l border-slate-200 ml-2 mt-1">
-                    <li><Link href="https://2026.geoaicon.com/intersession" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Geo Intersession – 2026</Link></li>
+                    <li><Link href="https://sensrs.com/gallery/geoinnovate-thon-26/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">GeoInnovate Thon 2026</Link></li>
                   </ul>
                 </details>
               </li>

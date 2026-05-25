@@ -121,7 +121,7 @@ export default function IntersessionPreview() {
 
             {/* Blurred +87 More Photos Card */}
             <motion.a 
-              href="https://2026.geoaicon.com/intersession" 
+              href="https://sensrs.com/gallery/geoinnovate-thon-26/" 
               target="_blank"
               whileHover={{ y: -5 }}
               className="relative shrink-0 w-[280px] md:w-[320px] lg:w-[360px] aspect-[4/5] overflow-hidden rounded-3xl group border border-slate-200 shadow-md snap-center md:snap-start cursor-pointer bg-white flex items-center justify-center isolate hover:border-blue-300 transition-all duration-300 hover:shadow-xl"
@@ -151,7 +151,7 @@ export default function IntersessionPreview() {
         {/* Centered CTA */}
         <FadeIn delay={0.2} className="mt-8 flex justify-center pt-8">
           <a 
-            href="https://2026.geoaicon.com/intersession" 
+            href="https://sensrs.com/gallery/geoinnovate-thon-26/" 
             target="_blank" 
             className="btn bg-white border-slate-200 text-slate-700 rounded-xl px-10 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-300 shadow-sm transition-all duration-300 tracking-wide font-semibold Group"
           >
