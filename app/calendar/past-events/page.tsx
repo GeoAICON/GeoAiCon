@@ -8,22 +8,22 @@ export default function PastEventsPage() {
     <div className="min-h-screen bg-slate-50">
       <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
         {/* Background Image with elegant overlay */}
-        <div className="absolute inset-0 z-0 opacity-30 select-none pointer-events-none">
+        <div className="absolute inset-0 z-0 opacity-90 select-none pointer-events-none">
           <img
-            src="/herobg/header-bg16.webp"
+            src="/herobg/header-bg13.webp"
             alt="Header Background Texture"
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 to-indigo-950/80 z-10 select-none pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/45 to-indigo-950/45 z-10 select-none pointer-events-none" />
 
         <div className="container-standard text-center relative z-20">
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-6 drop-shadow-md">
             Event Archive
           </h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <div className="text-sm sm:text-base md:text-lg text-blue-100/90 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-sm">
             Review highlights, materials, and recordings from our previous successful conferences and workshops.
-          </p>
+          </div>
         </div>
       </section>
 
