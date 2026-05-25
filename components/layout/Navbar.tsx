@@ -54,7 +54,6 @@ export default function Navbar() {
               </div>
               <ul tabIndex={0} className="dropdown-content menu p-2 shadow-xl bg-white rounded-xl w-60 border border-slate-100 z-[60] mt-0">
                 <li><Link href="https://2026.geoaicon.com/intersession" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Geo Intersession – 2026</Link></li>
-                <li><Link href="/workshop/geoinnovatethon" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">GeoInnovateThon – 2026</Link></li>
               </ul>
             </li>
 
@@ -111,7 +110,6 @@ export default function Navbar() {
                   <summary className="hover:text-blue-600">Workshop</summary>
                   <ul className="p-2 border-l border-slate-200 ml-2 mt-1">
                     <li><Link href="https://2026.geoaicon.com/intersession" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Geo Intersession – 2026</Link></li>
-                    <li><Link href="/workshop/geoinnovatethon" className="hover:text-blue-600">GeoInnovateThon – 2026</Link></li>
                   </ul>
                 </details>
               </li>

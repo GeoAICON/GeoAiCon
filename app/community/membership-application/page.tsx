@@ -6,8 +6,18 @@ export const metadata = {
 export default function MembershipApplicationPage() {
   return (
     <div className="min-h-screen bg-slate-50">
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20">
-        <div className="container-standard text-center">
+      <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
+        {/* Background Image with elegant overlay */}
+        <div className="absolute inset-0 z-0 opacity-30 select-none pointer-events-none">
+          <img
+            src="/herobg/header-bg5.webp"
+            alt="Header Background Texture"
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 to-indigo-950/80 z-10 select-none pointer-events-none" />
+
+        <div className="container-standard text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
             Join Our Community
           </h1>
