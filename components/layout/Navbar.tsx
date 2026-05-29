@@ -33,8 +33,8 @@ export default function Navbar() {
         </div>
         <div className="navbar-center hidden xl:flex">
           <ul className="menu menu-horizontal px-1 gap-1 lg:gap-2 font-medium text-slate-700">
-            <li><Link href="#about" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">About</Link></li>
-            <li><Link href="#editions" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Editions</Link></li>
+            <li><Link href="/#about" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">About</Link></li>
+            <li><Link href="/#editions" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Editions</Link></li>
             
             <li className="dropdown dropdown-hover">
               <div tabIndex={0} role="button" className="hover:text-blue-600 hover:bg-blue-50 flex items-center gap-1 transition-colors">
@@ -79,12 +79,12 @@ export default function Navbar() {
               </ul>
             </li>
 
-            <li><Link href="#ecosystem" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Ecosystem</Link></li>
-            <li><Link href="#impact" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Impact</Link></li>
+            <li><Link href="/#ecosystem" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Ecosystem</Link></li>
+            <li><Link href="/#impact" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Impact</Link></li>
           </ul>
         </div>
         <div className="navbar-end w-auto gap-2 md:gap-4">
-          <Link href="#partnership" className="btn btn-outline border-slate-300 text-slate-700 hover:bg-slate-100 hover:border-slate-400 hover:text-slate-900 btn-sm md:btn-md hidden sm:inline-flex rounded-btn shadow-sm">
+          <Link href="https://2026.geoaicon.com/committee" target="_blank" className="btn btn-outline border-slate-300 text-slate-700 hover:bg-slate-100 hover:border-slate-400 hover:text-slate-900 btn-sm md:btn-md hidden sm:inline-flex rounded-btn shadow-sm">
             Partner with us
           </Link>
           <div className="dropdown dropdown-end xl:hidden">
@@ -92,8 +92,8 @@ export default function Navbar() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[60] p-2 shadow-xl bg-white border border-slate-200 rounded-box w-64 font-medium text-slate-700 max-h-[85vh] overflow-y-auto">
-              <li><Link href="#about">About</Link></li>
-              <li><Link href="#editions">Editions</Link></li>
+              <li><Link href="/#about">About</Link></li>
+              <li><Link href="/#editions">Editions</Link></li>
               
               <li>
                 <details>
@@ -134,9 +134,9 @@ export default function Navbar() {
                 </details>
               </li>
 
-              <li><Link href="#ecosystem">Ecosystem</Link></li>
-              <li><Link href="#impact">Impact</Link></li>
-              <li><Link href="#partnership" className="text-blue-600 font-bold mt-2">Partner with us</Link></li>
+              <li><Link href="/#ecosystem">Ecosystem</Link></li>
+              <li><Link href="/#impact">Impact</Link></li>
+              <li><Link href="https://2026.geoaicon.com/committee" target="_blank" className="text-blue-600 font-bold mt-2">Partner with us</Link></li>
             </ul>
           </div>
         </div>

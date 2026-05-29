@@ -31,30 +31,126 @@ export default function PastEventsPage() {
         <div className="container-standard max-w-5xl">
           <div className="space-y-8">
             {/* 2025 Event Card */}
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-8 items-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-xl overflow-hidden shadow-inner shrink-0">
-                <img
-                  src="/gallery/day-1-3.jpg"
-                  alt="GeoAI CON 2025 Keynote"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="w-full md:w-2/3">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Conference</span>
-                  <span className="text-slate-500 text-sm font-medium">Oct 2025</span>
+            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col gap-8 hover:shadow-md transition-all duration-300">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-2xl overflow-hidden shadow-inner shrink-0 self-center">
+                  <img
+                    src="/gallery/day-1-3.jpg"
+                    alt="GeoAI CON 2025 at IIT Ropar"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-slate-950/75 backdrop-blur-sm text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1.5 rounded-lg border border-white/10">
+                    IIT Ropar, Punjab
+                  </div>
                 </div>
-                <h2 className="text-2xl font-black text-slate-900 mb-3">GeoAI CON 2025</h2>
-                <p className="text-slate-600 mb-5 leading-relaxed text-sm">
-                  Our inaugural international conference gathered over 400 attendees to discuss the foundational integration of artificial intelligence with geographic information systems.
-                </p>
+                <div className="w-full md:w-2/3 flex flex-col justify-between">
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
+                      <span className="bg-blue-50 text-blue-700 border border-blue-100 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">International Conference</span>
+                      <span className="text-slate-500 text-xs font-semibold tracking-wide uppercase">5 - 8 September 2025</span>
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-3 tracking-tight">GeoAI CON 2025</h2>
+                    
+                    <p className="text-slate-600 mb-4 leading-relaxed text-sm font-normal">
+                      Organized by the <strong>Centre of Excellence in Socio-Environmental Sustainability for River Sand Mining (SEnSRS)</strong> at the <strong>Indian Institute of Technology (IIT) Ropar</strong>, Punjab, India. 
+                      GeoAI CON 2025 brought together researchers, academicians, industry professionals, and students to share recent advancements, innovative ideas, and research outcomes related to Geospatial Artificial Intelligence, Earth observation, remote sensing, surveying, and environmental sustainability.
+                    </p>
+
+                    <div className="bg-slate-50 border border-slate-100 rounded-2xl p-4 mb-4 text-xs text-slate-600 italic flex gap-3 items-start">
+                      <span className="text-blue-500 text-lg leading-none">“</span>
+                      <div>
+                        The conference was inaugurated at the Senate Hall (Admin Block) with a welcome address by the Organizing Secretary, <strong>Dr. Reet Kamal Tiwari</strong>, and a Patron's Address by <strong>Prof. (Dr.) Rajiv Ahuja</strong>, Director of IIT Ropar, setting the stage for future collaborations in Spatial Intelligence.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Rich Technical Program & Speaker Grid */}
+              <div className="grid md:grid-cols-2 gap-6 border-t border-slate-100 pt-6">
+                <div className="bg-slate-50/50 rounded-2xl p-5 border border-slate-100">
+                  <h3 className="text-xs font-bold text-slate-900 uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+                    Distinguished Keynotes
+                  </h3>
+                  <ul className="space-y-2.5 text-xs text-slate-600">
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Biswajeet Pardhan</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">UTS Sydney, Australia</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Avik Bhattacharya</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">IIT Bombay</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Mahesh Kumar Jat</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">MNIT Jaipur</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Mahesh Pal</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">NIT Kurukshetra</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Ajanta Goswami</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">IIT Roorkee</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Akshar Tripathi</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">IIT Patna</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <strong className="text-slate-800 shrink-0">Prof. (Dr.) Prashant K. Srivastav</strong> 
+                      <span className="text-slate-400">&bull;</span> 
+                      <span className="text-slate-500">BHU Varanasi</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-slate-50/50 rounded-2xl p-5 border border-slate-100">
+                  <h3 className="text-xs font-bold text-slate-900 uppercase tracking-widest mb-3 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-600" />
+                    Core Highlights & Themes
+                  </h3>
+                  <ul className="space-y-3 text-xs text-slate-600">
+                    <li className="flex gap-2.5 items-start">
+                      <span className="text-cyan-600 font-bold shrink-0 mt-0.5">✓</span>
+                      <div>
+                        <strong>Diverse Sessions:</strong> Technical onsite presentations on <em>"GeoAI in Earth Observation"</em> and <em>"Advanced Applications of AI"</em> alongside global virtual presentations via Google Meet.
+                      </div>
+                    </li>
+                    <li className="flex gap-2.5 items-start">
+                      <span className="text-cyan-600 font-bold shrink-0 mt-0.5">✓</span>
+                      <div>
+                        <strong>Practical Tutorials:</strong> Dedicated third day for hands-on drone mapping, surveying, and advanced geomatics training at the Geomatics Engineering Lab.
+                      </div>
+                    </li>
+                    <li className="flex gap-2.5 items-start">
+                      <span className="text-cyan-600 font-bold shrink-0 mt-0.5">✓</span>
+                      <div>
+                        <strong>Academic Exchange:</strong> Provided students and researchers an elite networking hub for sharing innovative remote sensing methodologies and sustainability tools.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex justify-between items-center border-t border-slate-100 pt-6">
+                <div className="text-xs text-slate-400 font-semibold tracking-wider uppercase">
+                  IIT Ropar, India &bull; 4-Day Symposium
+                </div>
                 <a 
                   href="https://2025.geoaicon.com/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 btn btn-outline btn-primary rounded-xl px-6 font-bold text-xs uppercase tracking-wider"
+                  className="inline-flex items-center gap-2 btn btn-outline btn-primary rounded-xl px-6 font-bold text-xs uppercase tracking-wider shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-transform"
                 >
-                  View 2025 Website
+                  View 2025 Archive
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
               </div>

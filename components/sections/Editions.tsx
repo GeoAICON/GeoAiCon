@@ -68,11 +68,11 @@ export default function Editions() {
                 <div className="relative z-10">
                   <div className="flex justify-between items-start mb-6">
                     <div className="font-bold uppercase tracking-widest text-[10px] px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600">Completed</div>
-                    <div className="text-slate-400 font-semibold tracking-wider text-xs uppercase">Dec 2025</div>
+                    <div className="text-slate-400 font-semibold tracking-wider text-xs uppercase">Sep 2025</div>
                   </div>
                   <h4 className="text-lg font-bold mb-3 text-slate-800 group-hover:text-slate-900 transition-colors">GeoAI CON 2025</h4>
                   <p className="text-slate-500 mb-6 leading-relaxed font-normal text-sm">
-                    Our landmark previous edition that brought together thousands of researchers and established foundational frameworks for modern spatial AI.
+                    Hosted by SEnSRS at IIT Ropar from 5th to 8th September 2025. Focused on GeoAI, remote sensing, and sustainability with elite keynotes and hands-on drone mapping.
                   </p>
                 </div>
                 <Link href="https://2025.geoaicon.com" target="_blank" className="relative z-10 btn btn-outline border-slate-300 text-slate-600 w-fit rounded-xl px-8 hover:bg-slate-50 hover:border-slate-400 hover:text-slate-900 transition-colors group-hover:px-10 shadow-sm">

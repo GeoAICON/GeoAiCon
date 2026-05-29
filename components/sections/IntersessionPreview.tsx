@@ -6,29 +6,60 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FadeIn } from '../layout/Animations';
 
 export default function IntersessionPreview() {
-  const [activeDay, setActiveDay] = useState(1);
+  const [activeDay, setActiveDay] = useState<number>(1);
 
-  // Grouped by day
+  const dayDescriptions: Record<number, { title: string; desc: string }> = {
+    1: { 
+      title: 'DGPS Surveying', 
+      desc: 'Hands-on training with Differential Global Positioning System for precision geospatial data collection.' 
+    },
+    2: { 
+      title: 'Drone Surveying & Mapping', 
+      desc: 'Exploring UAV-based aerial surveying techniques for high-resolution terrain mapping and orthophoto generation.' 
+    },
+    3: { 
+      title: 'Multispectral Drone / TLS / Hyperspectral', 
+      desc: 'Exploring advanced remote sensing using multispectral imagery, Terrestrial Laser Scanning, and hyperspectral drones.' 
+    },
+    4: { 
+      title: 'Bathymetry Survey', 
+      desc: 'Hands-on tutorial on underwater terrain mapping using single/multi-beam sonar for water body depth analysis.' 
+    }
+  };
+
+  // Grouped by day with real SEnSRS assets
   const galleryData = {
     1: [
-      { src: '/gallery/day-1-2.jpg', title: 'Core Frameworks', desc: 'Setting the 2026 foundation' },
-      { src: '/gallery/day-1-3.jpg', title: 'Main Keynote', desc: 'Opening the global portal' },
-      { src: '/gallery/day-1-4.jpg', title: 'Panel Session', desc: 'Industry leaders debate' },
+      { src: '/SEnSRS/Day 1_Geo_26_1.webp', title: 'DGPS Field Setup', desc: 'DGPS field setup & equipment briefing' },
+      { src: '/SEnSRS/Day 1_Geo_26_2.webp', title: 'Survey Point Collection', desc: 'Survey point collection in the field' },
+      { src: '/SEnSRS/Day 1_Geo_26_3.webp', title: 'Fieldwork Operations', desc: 'Participants working with DGPS receivers' },
+      { src: '/SEnSRS/Day 1_Geo_26_4.webp', title: 'Precision Calibration', desc: 'Precision coordinates calibration' },
+      { src: '/SEnSRS/Day 1_Geo_26_5.webp', title: 'Practical Demonstration', desc: 'Practical demonstration session' },
+      { src: '/SEnSRS/Day 1_Geo_26_6  .webp', title: 'Group Survey Activity', desc: 'Group activity during survey' },
     ],
     2: [
-      { src: '/gallery/day-2-1.jpg', title: 'Spatial Systems', desc: 'Next-gen mapping' },
-      { src: '/gallery/day-2-2.jpg', title: 'Technology Demo', desc: 'Hands on application' },
-      { src: '/gallery/day-2-3.jpg', title: 'Networking', desc: 'Global connections' },
+      { src: '/SEnSRS/Day 2_Geo_26_.webp', title: 'Flight Planning', desc: 'Drone flight planning & mission briefing' },
+      { src: '/SEnSRS/Day 2_Geo_26_1.webp', title: 'UAV Assembly', desc: 'UAV assembly and pre-flight checks' },
+      { src: '/SEnSRS/Day 2_Geo_26_2.webp', title: 'Live Mapping Demo', desc: 'Live drone mapping demonstration' },
+      { src: '/SEnSRS/Day 2_Geo_26_3.webp', title: 'Aerial Data Collection', desc: 'Aerial data collection in progress' },
+      { src: '/SEnSRS/Day 2_Geo_26_4.webp', title: 'Orthophoto Workshop', desc: 'Orthophoto processing workshop' },
+      { src: '/SEnSRS/Day 2_Geo_26_5.webp', title: 'UAV Pilot Training', desc: 'Students practicing drone operations' },
     ],
     3: [
-      { src: '/gallery/day-3-1.jpg', title: 'Drone Deployments', desc: 'Multi-spectral testing' },
-      { src: '/gallery/day-3-2.jpg', title: 'Flight Systems', desc: 'Field operations' },
-      { src: '/gallery/day-3-3.jpg', title: 'Data Capture', desc: 'Live spatial feeds' },
+      { src: '/SEnSRS/Day 3_Geo_26_.webp', title: 'Sensor Calibration', desc: 'Multispectral sensor calibration' },
+      { src: '/SEnSRS/Day 3_Geo_26_1.webp', title: 'TLS Instrument Setup', desc: 'TLS instrument setup & scanning' },
+      { src: '/SEnSRS/Day 3_Geo_26_2.webp', title: 'Hyperspectral Acquisition', desc: 'Hyperspectral image acquisition' },
+      { src: '/SEnSRS/Day 3_Geo_26_3.webp', title: 'Point Cloud Visuals', desc: 'Point cloud data visualization' },
+      { src: '/SEnSRS/Day 3_Geo_26_4.webp', title: 'Field Measurements', desc: 'Field measurement session' },
+      { src: '/SEnSRS/Day 3_Geo_26_5.webp', title: 'Collaborative Analysis', desc: 'Collaborative data analysis' },
     ],
     4: [
-      { src: '/gallery/day-4-1.jpg', title: 'Bathymetry Mapping', desc: 'Water-based intelligence' },
-      { src: '/gallery/day-4-2.jpg', title: 'Hardware Config', desc: 'Marine sensors setup' },
-      { src: '/gallery/day-4-3.jpg', title: 'Data Processing', desc: 'Analysis and rendering' },
+      { src: '/SEnSRS/Day 4_Geo_26_1.webp', title: 'Sonar Equipment', desc: 'Bathymetric equipment demonstration' },
+      { src: '/SEnSRS/Day 4_Geo_26_2.webp', title: 'Transducer Deployment', desc: 'Sonar transducer deployment' },
+      { src: '/SEnSRS/Day 4_Geo_26_3.webp', title: 'Underwater Mapping', desc: 'Depth data collection on water' },
+      { src: '/SEnSRS/Day 4_Geo_26_4.webp', title: 'Map Interpretation', desc: 'Bathymetric map interpretation' },
+      { src: '/SEnSRS/Day 4_Geo_26_5.webp', title: 'Survey Processing', desc: 'Live survey processing workshop' },
+      { src: '/SEnSRS/Day 4_Geo_26_6.webp', title: 'Water Body Fieldwork', desc: 'Team fieldwork near water body' },
     ]
   };
 
@@ -41,12 +72,12 @@ export default function IntersessionPreview() {
         {/* Header Section */}
         <FadeIn className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
           <div className="max-w-2xl space-y-4">
-            <h2 className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block shadow-sm">Ongoing Work</h2>
+            <h2 className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block shadow-sm">Intersession Program</h2>
             <h3 className="text-xl md:text-2xl font-bold tracking-tight text-slate-900">
-              Intersession <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Glimpses</span>
+              Day 0{activeDay}: <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">{dayDescriptions[activeDay].title}</span>
             </h3>
             <p className="text-slate-600 mt-3 max-w-lg leading-relaxed text-sm font-normal">
-              Behind the scenes of our continual global research deployment and field operations between main events.
+              {dayDescriptions[activeDay].desc}
             </p>
           </div>
           
@@ -118,16 +149,16 @@ export default function IntersessionPreview() {
                 </div>
               </motion.div>
             ))}
-
+ 
             {/* Blurred +87 More Photos Card */}
             <motion.a 
-              href="https://sensrs.com/gallery/geoinnovate-thon-26/" 
+              href="https://2026.geoaicon.com/intersession" 
               target="_blank"
               whileHover={{ y: -5 }}
               className="relative shrink-0 w-[280px] md:w-[320px] lg:w-[360px] aspect-[4/5] overflow-hidden rounded-3xl group border border-slate-200 shadow-md snap-center md:snap-start cursor-pointer bg-white flex items-center justify-center isolate hover:border-blue-300 transition-all duration-300 hover:shadow-xl"
             >
               <Image 
-                src="/gallery/day-1-2.jpg" 
+                src="/SEnSRS/Day 1_Geo_26_2.webp" 
                 alt="Background blur" 
                 fill
                 sizes="25vw"
@@ -151,12 +182,12 @@ export default function IntersessionPreview() {
         {/* Centered CTA */}
         <FadeIn delay={0.2} className="mt-8 flex justify-center pt-8">
           <a 
-            href="https://sensrs.com/gallery/geoinnovate-thon-26/" 
+            href="https://2026.geoaicon.com/intersession" 
             target="_blank" 
-            className="btn bg-white border-slate-200 text-slate-700 rounded-xl px-10 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-300 shadow-sm transition-all duration-300 tracking-wide font-semibold Group"
+            className="btn bg-white border-slate-200 text-slate-700 rounded-xl px-10 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-300 shadow-sm transition-all duration-300 tracking-wide font-semibold group"
           >
             View Complete Gallery 
-            <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+            <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
           </a>
         </FadeIn>
       </div>

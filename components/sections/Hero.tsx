@@ -126,7 +126,8 @@ export default function Hero() {
             Visit 2026 Portal &rarr;
           </Link>
           <Link
-            href="#partnership"
+            href="https://2026.geoaicon.com/committee"
+            target="_blank"
             className="w-full sm:w-auto btn bg-slate-900/60 border border-slate-700 text-slate-200 hover:bg-slate-800/80 hover:border-slate-500 hover:text-white font-bold tracking-wide rounded-2xl px-10 py-4 backdrop-blur-sm hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 h-auto"
           >
             Partner with us
