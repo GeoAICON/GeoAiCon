@@ -27,39 +27,27 @@ export default function IntersessionPreview() {
     }
   };
 
-  // Grouped by day with real SEnSRS assets
+  // Grouped by day with local gallery assets
   const galleryData = {
     1: [
-      { src: '/SEnSRS/Day 1_Geo_26_1.webp', title: 'DGPS Field Setup', desc: 'DGPS field setup & equipment briefing' },
-      { src: '/SEnSRS/Day 1_Geo_26_2.webp', title: 'Survey Point Collection', desc: 'Survey point collection in the field' },
-      { src: '/SEnSRS/Day 1_Geo_26_3.webp', title: 'Fieldwork Operations', desc: 'Participants working with DGPS receivers' },
-      { src: '/SEnSRS/Day 1_Geo_26_4.webp', title: 'Precision Calibration', desc: 'Precision coordinates calibration' },
-      { src: '/SEnSRS/Day 1_Geo_26_5.webp', title: 'Practical Demonstration', desc: 'Practical demonstration session' },
-      { src: '/SEnSRS/Day 1_Geo_26_6  .webp', title: 'Group Survey Activity', desc: 'Group activity during survey' },
+      { src: '/gallery/day-1-2.jpg', title: 'DGPS Field Setup', desc: 'DGPS field setup & equipment briefing' },
+      { src: '/gallery/day-1-3.jpg', title: 'Survey Point Collection', desc: 'Survey point collection in the field' },
+      { src: '/gallery/day-1-4.jpg', title: 'Fieldwork Operations', desc: 'Participants working with DGPS receivers' },
     ],
     2: [
-      { src: '/SEnSRS/Day 2_Geo_26_.webp', title: 'Flight Planning', desc: 'Drone flight planning & mission briefing' },
-      { src: '/SEnSRS/Day 2_Geo_26_1.webp', title: 'UAV Assembly', desc: 'UAV assembly and pre-flight checks' },
-      { src: '/SEnSRS/Day 2_Geo_26_2.webp', title: 'Live Mapping Demo', desc: 'Live drone mapping demonstration' },
-      { src: '/SEnSRS/Day 2_Geo_26_3.webp', title: 'Aerial Data Collection', desc: 'Aerial data collection in progress' },
-      { src: '/SEnSRS/Day 2_Geo_26_4.webp', title: 'Orthophoto Workshop', desc: 'Orthophoto processing workshop' },
-      { src: '/SEnSRS/Day 2_Geo_26_5.webp', title: 'UAV Pilot Training', desc: 'Students practicing drone operations' },
+      { src: '/gallery/day-2-1.jpg', title: 'Flight Planning', desc: 'Drone flight planning & mission briefing' },
+      { src: '/gallery/day-2-2.jpg', title: 'UAV Assembly', desc: 'UAV assembly and pre-flight checks' },
+      { src: '/gallery/day-2-3.jpg', title: 'Live Mapping Demo', desc: 'Live drone mapping demonstration' },
     ],
     3: [
-      { src: '/SEnSRS/Day 3_Geo_26_.webp', title: 'Sensor Calibration', desc: 'Multispectral sensor calibration' },
-      { src: '/SEnSRS/Day 3_Geo_26_1.webp', title: 'TLS Instrument Setup', desc: 'TLS instrument setup & scanning' },
-      { src: '/SEnSRS/Day 3_Geo_26_2.webp', title: 'Hyperspectral Acquisition', desc: 'Hyperspectral image acquisition' },
-      { src: '/SEnSRS/Day 3_Geo_26_3.webp', title: 'Point Cloud Visuals', desc: 'Point cloud data visualization' },
-      { src: '/SEnSRS/Day 3_Geo_26_4.webp', title: 'Field Measurements', desc: 'Field measurement session' },
-      { src: '/SEnSRS/Day 3_Geo_26_5.webp', title: 'Collaborative Analysis', desc: 'Collaborative data analysis' },
+      { src: '/gallery/day-3-1.jpg', title: 'Sensor Calibration', desc: 'Multispectral sensor calibration' },
+      { src: '/gallery/day-3-2.jpg', title: 'TLS Instrument Setup', desc: 'TLS instrument setup & scanning' },
+      { src: '/gallery/day-3-3.jpg', title: 'Hyperspectral Acquisition', desc: 'Hyperspectral image acquisition' },
     ],
     4: [
-      { src: '/SEnSRS/Day 4_Geo_26_1.webp', title: 'Sonar Equipment', desc: 'Bathymetric equipment demonstration' },
-      { src: '/SEnSRS/Day 4_Geo_26_2.webp', title: 'Transducer Deployment', desc: 'Sonar transducer deployment' },
-      { src: '/SEnSRS/Day 4_Geo_26_3.webp', title: 'Underwater Mapping', desc: 'Depth data collection on water' },
-      { src: '/SEnSRS/Day 4_Geo_26_4.webp', title: 'Map Interpretation', desc: 'Bathymetric map interpretation' },
-      { src: '/SEnSRS/Day 4_Geo_26_5.webp', title: 'Survey Processing', desc: 'Live survey processing workshop' },
-      { src: '/SEnSRS/Day 4_Geo_26_6.webp', title: 'Water Body Fieldwork', desc: 'Team fieldwork near water body' },
+      { src: '/gallery/day-4-1.jpg', title: 'Sonar Equipment', desc: 'Bathymetric equipment demonstration' },
+      { src: '/gallery/day-4-2.jpg', title: 'Transducer Deployment', desc: 'Sonar transducer deployment' },
+      { src: '/gallery/day-4-3.jpg', title: 'Underwater Mapping', desc: 'Depth data collection on water' },
     ]
   };
 
@@ -158,7 +146,7 @@ export default function IntersessionPreview() {
               className="relative shrink-0 w-[280px] md:w-[320px] lg:w-[360px] aspect-[4/5] overflow-hidden rounded-3xl group border border-slate-200 shadow-md snap-center md:snap-start cursor-pointer bg-white flex items-center justify-center isolate hover:border-blue-300 transition-all duration-300 hover:shadow-xl"
             >
               <Image 
-                src="/SEnSRS/Day 1_Geo_26_2.webp" 
+                src="/gallery/day-1-2.jpg" 
                 alt="Background blur" 
                 fill
                 sizes="25vw"
