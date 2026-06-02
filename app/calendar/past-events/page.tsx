@@ -157,33 +157,118 @@ export default function PastEventsPage() {
             </div>
 
             {/* GeoInnovate Thon 2026 Card */}
-            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex flex-col md:flex-row gap-8 items-center hover:shadow-md transition-shadow duration-300">
-              <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-xl overflow-hidden shadow-inner shrink-0">
-                <img
-                  src="https://sensrs.com/images/photo-gallery/geo-innovate-thon-26/git-1.jpeg"
-                  alt="GeoInnovate Thon 2026 Students Group"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="w-full md:w-2/3 flex flex-col items-start">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Workshop</span>
-                  <span className="text-slate-500 text-sm font-medium">May 2026</span>
+            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col gap-8 hover:shadow-md transition-all duration-300">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-2xl overflow-hidden shadow-inner shrink-0 self-center">
+                  <img
+                    src="https://sensrs.com/images/photo-gallery/geo-innovate-thon-26/git-1.jpeg"
+                    alt="GeoInnovate Thon 2026 Students Group at IIT Ropar"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-slate-950/75 backdrop-blur-sm text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1.5 rounded-lg border border-white/10">
+                    IIT Ropar, Punjab
+                  </div>
                 </div>
-                <h2 className="text-2xl font-black text-slate-900 mb-1">GeoInnovate Thon 2026</h2>
-                <p className="text-slate-500 text-xs font-bold uppercase tracking-wider text-teal-600 mb-3">
-                  Innovate for Earth, Inspired by Space
-                </p>
-                <p className="text-slate-600 mb-5 leading-relaxed text-sm">
-                  An intensive design-thinking hackathon and workshop series uniting student innovators and geospatial researchers to tackle critical socio-environmental and sustainability challenges.
-                </p>
+                <div className="w-full md:w-2/3 flex flex-col justify-between">
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
+                      <span className="bg-emerald-50 text-emerald-700 border border-emerald-100 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Interdisciplinary Outreach</span>
+                      <span className="text-slate-500 text-xs font-semibold tracking-wide uppercase">25 April 2026</span>
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2 tracking-tight">GeoInnovate Thon 2026</h2>
+                    <div className="text-xs sm:text-sm font-bold tracking-wider uppercase bg-gradient-to-r from-emerald-600 to-indigo-600 bg-clip-text text-transparent mb-4">
+                      Innovate for Earth, Inspired by Space
+                    </div>
+                    
+                    <p className="text-slate-600 mb-4 leading-relaxed text-sm font-normal">
+                      Organized by the <strong>Centre of Excellence in Socio-Environmental Sustainability for River Sand Mining (CoE SenSRS)</strong>, <strong>Indian Institute of Technology Ropar (IIT Ropar)</strong>, under the prestigious banner of the <strong>Indian Society of Remote Sensing (ISRS)</strong>. This flagship interdisciplinary outreach initiative successfully engaged students of <strong>Classes VIII to XII</strong>, fostering scientific curiosity, innovation, and environmental awareness through the prism of Earth and Space Sciences.
+                    </p>
+
+                    <div className="bg-slate-50 border border-slate-100 rounded-2xl p-4 mb-4 text-xs text-slate-600 italic flex gap-3 items-start">
+                      <span className="text-emerald-500 text-lg leading-none">“</span>
+                      <div>
+                        Conceived to inspire the next generation of researchers and innovators, Geolnnovate Thon 2026 successfully bridged the gap between classroom theories and real-world scientific applications, highlighting the potential of remote sensing and space science for sustainable resource management.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Technical program, keynote sessions, and live demonstrations */}
+              <div className="grid md:grid-cols-2 gap-6 border-t border-slate-100 pt-6">
+                <div className="bg-slate-50/50 rounded-2xl p-5 border border-slate-100">
+                  <h3 className="text-xs font-bold text-slate-900 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
+                    Eminent Keynote Sessions
+                  </h3>
+                  <ul className="space-y-3.5 text-xs text-slate-600">
+                    <li className="flex flex-col gap-0.5">
+                      <div className="flex items-center gap-2">
+                        <strong className="text-slate-800">Mr. Aseem K. Sharma (IFS Retd.)</strong>
+                      </div>
+                      <span className="text-slate-500">Environmental stewardship, natural resource conservation, and sustainable development.</span>
+                    </li>
+                    <li className="flex flex-col gap-0.5">
+                      <div className="flex items-center gap-2">
+                        <strong className="text-slate-800">Dr. Reet Kamal Tiwari</strong>
+                      </div>
+                      <span className="text-slate-500">Growing significance of Earth observation technologies for addressing contemporary environmental challenges.</span>
+                    </li>
+                    <li className="flex flex-col gap-0.5">
+                      <div className="flex items-center gap-2">
+                        <strong className="text-slate-800">Dr. Sartajvir Singh Dhillon</strong>
+                      </div>
+                      <span className="text-slate-500">Cultivating analytical thinking, scientific innovation, and global research opportunities from an early age.</span>
+                    </li>
+                    <li className="flex flex-col gap-0.5">
+                      <div className="flex items-center gap-2">
+                        <strong className="text-slate-800">Dr. Vishakha Sood</strong>
+                      </div>
+                      <span className="text-slate-500">Contemporary advancements in science and technology alongside their direct societal relevance.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-slate-50/50 rounded-2xl p-5 border border-slate-100">
+                  <h3 className="text-xs font-bold text-slate-900 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-600" />
+                    Experiential Highlights & Attractions
+                  </h3>
+                  <ul className="space-y-3.5 text-xs text-slate-600">
+                    <li className="flex gap-2.5 items-start">
+                      <span className="text-indigo-600 font-bold shrink-0 mt-0.5">✓</span>
+                      <div>
+                        <strong>Live Drone Demonstration:</strong> Led by <em>Mohit Patial, Mohit Thakur, and Randeep Singh</em>, providing school students a hands-on showcase of drone assembly, data acquisition, mapping, and applications in disaster management and precision agriculture.
+                      </div>
+                    </li>
+                    <li className="flex gap-2.5 items-start">
+                      <span className="text-indigo-600 font-bold shrink-0 mt-0.5">✓</span>
+                      <div>
+                        <strong>Earth & Space Science Competition:</strong> A vibrant creative arena where students designed innovative solutions to critical environmental problems using space-based remote sensing concepts.
+                      </div>
+                    </li>
+                    <li className="flex gap-2.5 items-start">
+                      <span className="text-indigo-600 font-bold shrink-0 mt-0.5">✓</span>
+                      <div>
+                        <strong>Awards & Certificate Distribution:</strong> Recognizing outstanding student performances and concluding the program with deep gratitude to speakers, teachers, volunteers, and partnering institutions.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row justify-between items-center border-t border-slate-100 pt-6 gap-4">
+                <div className="text-xs text-slate-400 font-semibold tracking-wider uppercase text-center sm:text-left">
+                  IIT Ropar, Kendriya Vidyalaya &bull; School Outreach Program
+                </div>
                 <a 
                   href="https://sensrs.com/gallery/geoinnovate-thon-26/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 bg-[#104c35] hover:bg-[#0c3927] text-white font-extrabold text-xs uppercase tracking-widest px-8 py-3.5 rounded-xl shadow-lg shadow-teal-900/10 hover:shadow-teal-900/20 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] border-none"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-700 to-teal-800 hover:from-emerald-800 hover:to-teal-900 text-white font-extrabold text-xs uppercase tracking-widest px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] border-none"
                 >
-                  Explore Gallery &rarr;
+                  Explore Event Gallery
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
               </div>
             </div>

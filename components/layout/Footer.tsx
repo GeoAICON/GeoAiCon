@@ -28,7 +28,7 @@ export default function Footer() {
               <ul className="space-y-3 text-sm flex flex-col text-slate-600 font-medium">
                 <li><Link href="https://2026.geoaicon.com" target="_blank" className="hover:text-blue-600 transition-colors">GeoAI CON 2026</Link></li>
                 <li><Link href="https://2025.geoaicon.com" target="_blank" className="hover:text-blue-600 transition-colors">GeoAI CON 2025</Link></li>
-                <li><Link href="/#intersession" className="hover:text-blue-600 transition-colors">Intersession</Link></li>
+                <li><Link href="/workshop/intersession-2026" className="hover:text-blue-600 transition-colors">Intersession</Link></li>
               </ul>
             </div>
             <div className="space-y-4">

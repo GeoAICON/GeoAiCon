@@ -53,8 +53,8 @@ export default function Navbar() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 opacity-70" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
               </div>
               <ul tabIndex={0} className="dropdown-content menu p-2 shadow-xl bg-white rounded-xl w-60 border border-slate-100 z-[60] mt-0">
-                <li><Link href="https://sensrs.com/gallery/geoinnovate-thon-26/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">GeoInnovate Thon 2026</Link></li>
-                <li><Link href="/#intersession" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Intersession 2026</Link></li>
+                <li><Link href="/workshop/geoinnovate-thon-2026" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">GeoInnovate Thon 2026</Link></li>
+                <li><Link href="/workshop/intersession-2026" className="hover:text-blue-600 hover:bg-blue-50 transition-colors">Intersession 2026</Link></li>
               </ul>
             </li>
 
@@ -110,8 +110,8 @@ export default function Navbar() {
                 <details>
                   <summary className="hover:text-blue-600">Workshop</summary>
                   <ul className="p-2 border-l border-slate-200 ml-2 mt-1">
-                    <li><Link href="https://sensrs.com/gallery/geoinnovate-thon-26/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">GeoInnovate Thon 2026</Link></li>
-                    <li><Link href="/#intersession" className="hover:text-blue-600">Intersession 2026</Link></li>
+                    <li><Link href="/workshop/geoinnovate-thon-2026" className="hover:text-blue-600">GeoInnovate Thon 2026</Link></li>
+                    <li><Link href="/workshop/intersession-2026" className="hover:text-blue-600">Intersession 2026</Link></li>
                   </ul>
                 </details>
               </li>
