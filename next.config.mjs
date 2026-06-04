@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Trigger Vercel build test
 const nextConfig = {
   turbopack: {
     root: '.',
