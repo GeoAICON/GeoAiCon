@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import OptimizedImage from '../../../components/ui/OptimizedImage';
 import { AnimatePresence, motion } from 'framer-motion';
 
 interface DayData {
@@ -97,10 +98,13 @@ export default function IntersessionPage() {
       {/* ───── Hero Banner (Matches Site Sub-page Pattern) ───── */}
       <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-90 select-none pointer-events-none">
-          <img
+          <OptimizedImage
             src="/herobg/header-bg13.webp"
             alt="Header Background Texture"
-            className="w-full h-full object-cover object-center"
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover object-center"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/45 to-indigo-950/45 z-10 select-none pointer-events-none" />
@@ -197,10 +201,12 @@ export default function IntersessionPage() {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {current.images.map((img, i) => (
                       <div key={i} className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-100 bg-slate-200 cursor-pointer hover:border-blue-200 hover:shadow-md transition-all duration-300">
-                        <img
+                        <OptimizedImage
                           src={img.src}
                           alt={img.caption}
-                          className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                          fill
+                          sizes="(max-width: 768px) 50vw, 25vw"
+                          className="object-cover group-hover:scale-[1.04] transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
                           <span className="text-[10px] text-white font-medium drop-shadow-md leading-snug">{img.caption}</span>

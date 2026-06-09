@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import OptimizedImage from '../ui/OptimizedImage';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FadeIn } from '../layout/Animations';
 
@@ -57,16 +57,22 @@ export default function IntersessionPreview() {
     <section id="intersession" className="py-24 bg-slate-50 relative overflow-hidden">
       
       <div className="container-standard relative z-10">
-        {/* Header Section */}
-        <FadeIn className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+        <FadeIn className="flex flex-col lg:flex-row justify-between lg:items-end gap-6 mb-12">
           <div className="max-w-2xl space-y-4">
-            <h2 className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block shadow-sm">Intersession Program</h2>
-            <h3 className="text-xl md:text-2xl font-bold tracking-tight text-slate-900">
-              Day 0{activeDay}: <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">{dayDescriptions[activeDay].title}</span>
+            <h2 className="text-xs font-bold text-blue-600 uppercase tracking-[0.2em] px-4 py-1.5 border border-blue-200 rounded-full bg-blue-50 inline-block shadow-sm">
+              GeoAI CON Inter-session 2026
+            </h2>
+            <h3 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900 leading-tight">
+              Hands-On Workshop &amp; Strategic Meet
             </h3>
-            <p className="text-slate-600 mt-3 max-w-lg leading-relaxed text-sm font-normal">
-              {dayDescriptions[activeDay].desc}
-            </p>
+            <div className="border-l-2 border-blue-600 pl-4 py-1 mt-4">
+              <span className="block text-xs font-bold uppercase tracking-wider text-blue-600">
+                Day 0{activeDay}: <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">{dayDescriptions[activeDay].title}</span>
+              </span>
+              <p className="text-slate-600 mt-2 max-w-lg leading-relaxed text-sm font-normal">
+                {dayDescriptions[activeDay].desc}
+              </p>
+            </div>
           </div>
           
           {/* Tab Navigation Controls */}
@@ -121,7 +127,7 @@ export default function IntersessionPreview() {
                 whileHover={{ y: -5 }}
                 className="relative shrink-0 w-[280px] md:w-[320px] lg:w-[360px] aspect-[4/5] overflow-hidden rounded-3xl group border border-slate-200 shadow-md snap-center md:snap-start cursor-pointer group hover:border-blue-300 transition-all duration-300 hover:shadow-[0_15px_30px_rgba(37,99,235,0.15)]"
               >
-                <Image 
+                <OptimizedImage 
                   src={img.src} 
                   alt={img.title} 
                   fill
@@ -145,7 +151,7 @@ export default function IntersessionPreview() {
               whileHover={{ y: -5 }}
               className="relative shrink-0 w-[280px] md:w-[320px] lg:w-[360px] aspect-[4/5] overflow-hidden rounded-3xl group border border-slate-200 shadow-md snap-center md:snap-start cursor-pointer bg-white flex items-center justify-center isolate hover:border-blue-300 transition-all duration-300 hover:shadow-xl"
             >
-              <Image 
+              <OptimizedImage 
                 src="/gallery/day-1-2.jpg" 
                 alt="Background blur" 
                 fill

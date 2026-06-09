@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
   title: 'Past Events | GeoAI CON',
   description: 'Explore the archive of successful past conferences, workshops, and webinars hosted by GeoAI CON.',
@@ -9,10 +11,13 @@ export default function PastEventsPage() {
       <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
         {/* Background Image with elegant overlay */}
         <div className="absolute inset-0 z-0 opacity-90 select-none pointer-events-none">
-          <img
+          <Image
             src="/herobg/header-bg13.webp"
             alt="Header Background Texture"
-            className="w-full h-full object-cover object-center"
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover object-center"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/45 to-indigo-950/45 z-10 select-none pointer-events-none" />
@@ -34,10 +39,12 @@ export default function PastEventsPage() {
             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col gap-8 hover:shadow-md transition-all duration-300">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-2xl overflow-hidden shadow-inner shrink-0 self-center">
-                  <img
+                  <Image
                     src="/gallery/day-1-3.jpg"
                     alt="GeoAI CON 2025 at IIT Ropar"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 30vw"
+                    className="object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-slate-950/75 backdrop-blur-sm text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1.5 rounded-lg border border-white/10">
                     IIT Ropar, Punjab
@@ -160,10 +167,12 @@ export default function PastEventsPage() {
             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col gap-8 hover:shadow-md transition-all duration-300">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-2xl overflow-hidden shadow-inner shrink-0 self-center">
-                  <img
+                  <Image
                     src="https://sensrs.com/images/photo-gallery/geo-innovate-thon-26/git-1.jpeg"
                     alt="GeoInnovate Thon 2026 Students Group at IIT Ropar"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 30vw"
+                    className="object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-slate-950/75 backdrop-blur-sm text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1.5 rounded-lg border border-white/10">
                     IIT Ropar, Punjab
