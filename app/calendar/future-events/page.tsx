@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Future Events | GeoAI CON',
@@ -13,10 +14,13 @@ export default function FutureEventsPage() {
       <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
         {/* Background Image with elegant overlay */}
         <div className="absolute inset-0 z-0 opacity-90 select-none pointer-events-none">
-          <img
+          <Image
             src="/herobg/header-bg13.webp"
-            alt="Header Background Texture"
-            className="w-full h-full object-cover object-center"
+            alt=""
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover object-center"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/45 to-indigo-950/45 z-10 select-none pointer-events-none" />

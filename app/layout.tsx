@@ -12,10 +12,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://geoaicon.com';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.geoaicon.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: './',
+  },
   title: {
     default: 'GeoAI CON Brand Portal | Advancing Geospatial AI',
     template: '%s | GeoAI CON'

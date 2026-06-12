@@ -3,8 +3,26 @@
 import { FadeIn, StaggerContainer, StaggerItem } from '../layout/Animations';
 import Image from 'next/image';
 
-const rLogos = ['r1.png', 'r2-fixed.png', 'r3.png', 'r5.png', 'r6.jpeg', 'r7.jpeg', 'r8.jpeg'];
-const cLogos = ['c1.jpeg', 'c2.png', 'c5.jpeg', 'c6.jpeg', 'c1.jpeg', 'c2.png', 'c5.jpeg', 'c6.jpeg'];
+const rLogos = [
+  { file: 'r1.png', alt: 'SEnSRS Centre of Excellence Logo' },
+  { file: 'r2-fixed.png', alt: 'Indian Institute of Technology (IIT) Ropar Logo' },
+  { file: 'r3.png', alt: 'National Remote Sensing Centre (NRSC) Logo' },
+  { file: 'r5.png', alt: 'ISRO Space Applications Centre Logo' },
+  { file: 'r6.jpeg', alt: 'IIT Bombay CSRE Logo' },
+  { file: 'r7.jpeg', alt: 'Indian Society of Remote Sensing (ISRS) Logo' },
+  { file: 'r8.jpeg', alt: 'Survey of India Logo' },
+];
+
+const cLogos = [
+  { file: 'c1.jpeg', alt: 'Sensrs Corp Logo' },
+  { file: 'c2.png', alt: 'Esri India GIS Logo' },
+  { file: 'c5.jpeg', alt: 'Trimble Navigation Logo' },
+  { file: 'c6.jpeg', alt: 'Hexagon Geospatial Logo' },
+  { file: 'c1.jpeg', alt: 'Sensrs Corp Logo' },
+  { file: 'c2.png', alt: 'Esri India GIS Logo' },
+  { file: 'c5.jpeg', alt: 'Trimble Navigation Logo' },
+  { file: 'c6.jpeg', alt: 'Hexagon Geospatial Logo' },
+];
 
 export default function Ecosystem() {
   return (
@@ -47,8 +65,8 @@ export default function Ecosystem() {
                 <div key={`r-${setIdx}-${i}`} className="flex items-center justify-center w-[180px] md:w-[260px] h-28 md:h-36 p-6 md:p-8 mx-4 md:mx-6 shrink-0 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-[0_15px_40px_-10px_rgba(37,99,235,0.15)] hover:border-blue-300 hover:-translate-y-2 transition-all duration-500 group cursor-default relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   <Image 
-                    src={`/LogoLoop/${logo}`}
-                    alt="GeoAI Partner"
+                    src={`/LogoLoop/${logo.file}`}
+                    alt={logo.alt}
                     width={220}
                     height={110}
                     className="object-contain max-h-full max-w-full opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
@@ -67,8 +85,8 @@ export default function Ecosystem() {
                 <div key={`c-${setIdx}-${i}`} className="flex items-center justify-center w-[180px] md:w-[260px] h-28 md:h-36 p-6 md:p-8 mx-4 md:mx-6 shrink-0 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-[0_15px_40px_-10px_rgba(6,182,212,0.15)] hover:border-cyan-300 hover:-translate-y-2 transition-all duration-500 group cursor-default relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-tr from-cyan-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   <Image 
-                    src={`/LogoLoop/${logo}`}
-                    alt="GeoAI Partner"
+                    src={`/LogoLoop/${logo.file}`}
+                    alt={logo.alt}
                     width={220}
                     height={110}
                     className="object-contain max-h-full max-w-full opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"

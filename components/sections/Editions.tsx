@@ -86,13 +86,48 @@ export default function Editions() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
-                '@context': 'https://schema.org',
-                '@type': 'Event',
-                'name': 'GeoAI CON 2026',
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'EducationEvent',
+              'name': 'GeoAI CON 2026',
+              'description': 'The premier international conference series on Geospatial Artificial Intelligence and Intelligent Systems for Earth, Environment and Sustainability.',
+              'startDate': '2026-11-23T09:00:00+05:30',
+              'endDate': '2026-11-27T18:00:00+05:30',
+              'eventAttendanceMode': 'https://schema.org/MixedEventAttendanceMode',
+              'eventStatus': 'https://schema.org/EventScheduled',
+              'location': [
+                {
+                  '@type': 'Place',
+                  'name': 'Indian Institute of Technology (IIT) Ropar',
+                  'address': {
+                    '@type': 'PostalAddress',
+                    'streetAddress': 'Bara Phool',
+                    'addressLocality': 'Rupnagar',
+                    'addressRegion': 'Punjab',
+                    'postalCode': '140001',
+                    'addressCountry': 'IN'
+                  }
+                },
+                {
+                  '@type': 'VirtualLocation',
+                  'url': 'https://2026.geoaicon.com'
+                }
+              ],
+              'organizer': {
+                '@type': 'Organization',
+                'name': 'Centre of Excellence in Socio-Environmental Sustainability (CoE-SEnSRS), IIT Ropar',
+                'url': 'https://www.geoaicon.com',
+                'logo': 'https://www.geoaicon.com/Logo1.png'
+              },
+              'offers': {
+                '@type': 'Offer',
+                'url': 'https://submission.geoaicon.com/',
+                'price': '0',
+                'priceCurrency': 'INR',
+                'availability': 'https://schema.org/InStock',
+                'validFrom': '2026-06-01T00:00:00+05:30'
               }
-            ])
+            })
           }}
         />
       </div>

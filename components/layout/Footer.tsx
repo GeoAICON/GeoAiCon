@@ -34,10 +34,10 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="font-semibold text-slate-900 tracking-wide text-sm uppercase">Resources</h4>
               <ul className="space-y-3 text-sm flex flex-col text-slate-600 font-medium">
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Research Papers</Link></li>
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Global Network</Link></li>
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Press Kit</Link></li>
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Guidelines</Link></li>
+                <li><Link href="/" className="hover:text-blue-600 transition-colors">Research Papers</Link></li>
+                <li><Link href="/" className="hover:text-blue-600 transition-colors">Global Network</Link></li>
+                <li><Link href="/" className="hover:text-blue-600 transition-colors">Press Kit</Link></li>
+                <li><Link href="/" className="hover:text-blue-600 transition-colors">Guidelines</Link></li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -46,8 +46,8 @@ export default function Footer() {
                 <li><Link href="https://www.facebook.com/people/Geoaicon/61582803331985/" target="_blank" className="hover:text-blue-600 transition-colors">Facebook</Link></li>
                 <li><Link href="https://www.instagram.com/geoaicon/" target="_blank" className="hover:text-blue-600 transition-colors">Instagram</Link></li>
                 <li><Link href="https://www.linkedin.com/groups/15392053/" target="_blank" className="hover:text-blue-600 transition-colors">LinkedIn</Link></li>
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Contact Support</Link></li>
-                <li><Link href="#" className="hover:text-blue-600 transition-colors">Sponsorship</Link></li>
+                <li><Link href="mailto:support@geoaicon.com" className="hover:text-blue-600 transition-colors">Contact Support</Link></li>
+                <li><Link href="https://2026.geoaicon.com/committee" target="_blank" className="hover:text-blue-600 transition-colors">Sponsorship</Link></li>
               </ul>
             </div>
           </div>
@@ -56,9 +56,9 @@ export default function Footer() {
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-medium">
           <p>&copy; {new Date().getFullYear()} GeoAI CON Global. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
-            <Link href="#" className="hover:text-slate-900 transition-colors">Code of Conduct</Link>
+            <Link href="/" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
+            <Link href="/" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
+            <Link href="/" className="hover:text-slate-900 transition-colors">Code of Conduct</Link>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 'use client';
 
 export default function JsonLd() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://geoaicon.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.geoaicon.com';
   
   const organizationSchema = {
     '@context': 'https://schema.org',
