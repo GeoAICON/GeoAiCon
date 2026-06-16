@@ -52,8 +52,8 @@ export default function Hero() {
       </div>
 
       {/* Cinematic Deep Contrast Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/45 via-slate-950/15 to-slate-950/65 z-10 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950/25 via-transparent to-slate-950/25 z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-slate-950/45 z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/20 to-slate-950/80 z-10 pointer-events-none" />
 
       {/* Core Typography & Action Content Grid */}
       <div className="container-standard relative z-20 w-full text-center px-6 py-12 md:py-20 flex flex-col items-center justify-center h-full">
@@ -85,7 +85,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-tight text-slate-100 max-w-4xl mx-auto mb-6 drop-shadow-md uppercase tracking-[0.05em]"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-tight text-slate-100 max-w-4xl mx-auto mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] uppercase tracking-[0.05em]"
         >
           International Geospatial AI and Remote Sensing Symposium
         </motion.h2>
@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-xs sm:text-sm md:text-base lg:text-lg text-slate-200/90 max-w-2xl mx-auto mb-8 font-normal leading-relaxed drop-shadow-sm"
+          className="text-xs sm:text-sm md:text-base lg:text-lg text-slate-100 max-w-2xl mx-auto mb-8 font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]"
         >
           Uniting academic minds, government leaders, and industry pioneers to build scalable geospatial AI solutions for global impact.
         </motion.div>
@@ -138,7 +138,7 @@ export default function Hero() {
 
       {/* Bottom Seamless Fade Mask to blend into layout base background (white) */}
       <div 
-        className="absolute bottom-0 left-0 w-full h-14 bg-gradient-to-t from-white to-transparent z-15 pointer-events-none" 
+        className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-white via-white/25 to-transparent z-15 pointer-events-none" 
       />
     </section>
   );

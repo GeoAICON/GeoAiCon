@@ -112,7 +112,7 @@ export default function IntersessionClient() {
         <div className="container-standard text-center relative z-20">
           <div className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-200 bg-white/10 backdrop-blur-sm border border-white/15 px-4 py-1.5 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            Hands-On Workshop &amp; Strategic Meet
+            Hands-On workshop and strategic meet.
           </div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 drop-shadow-md">
             GeoAI CON Inter-session 2026
